@@ -98,7 +98,7 @@ p, b, i, div, span, input, a {
   src: url("../fonts/headerfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/headerfont/iconfont.woff") format("woff"), url("../fonts/headerfont/iconfont.ttf") format("truetype"), url("../fonts/headerfont/iconfont.svg#iconfont") format("svg");
 }
 
-#selected .BookCity-header {
+.BookCity-header {
   width: 100%;
   height: 1.5rem;
   position: fixed;
@@ -109,7 +109,7 @@ p, b, i, div, span, input, a {
   padding-top: 0.5rem;
 }
 
-#selected .BookCity-header .BookCity-list {
+.BookCity-header .BookCity-list {
   width: 5.71rem;
   height: 0.84rem;
   position: absolute;
@@ -118,12 +118,12 @@ p, b, i, div, span, input, a {
   left: 0;
   right: 0;
   margin: auto;
-  background: url("../imgs/c1/c1_03.png") no-repeat 0 0;
+  background: url("../../../imgs/c1/c1_03.png") no-repeat 0 0;
   background-size: 100%;
   margin-top: 0.5rem;
 }
 
-#selected .BookCity-header .back-circle-r {
+.BookCity-header .back-circle-r {
   width: 0.44rem;
   height: 0.44rem;
   border-radius: 50%;
@@ -142,7 +142,7 @@ p, b, i, div, span, input, a {
   color: #73c4e7;
 }
 
-#selected .BookCity-header .classify {
+.BookCity-header .classify {
   width: 1.65rem;
   height: 100%;
   float: left;
@@ -150,33 +150,31 @@ p, b, i, div, span, input, a {
   color: #fff;
 }
 
-#selected .BookCity-header .classify h3 {
+.BookCity-header .classify h3 {
   margin-top: 0.15rem;
   font-size: 0.2rem;
 }
 
-#selected .BookCity-header .classify p {
+.BookCity-header .classify p {
   font-size: 0.12rem;
   margin-top: -.03rem;
   color: rgba(255, 255, 255, 0.6);
   transform: scale(0.8);
 }
 
-#selected .BookCity-header .classify:nth-of-type(1) {
-  background: url("../imgs/c1/c_03.png") no-repeat center center;
-  background-size: 100%;
+.BookCity-header .classify:nth-of-type(1) {
   margin-left: 0.1rem;
 }
 
-#selected .BookCity-header .classify:nth-of-type(2) {
+.BookCity-header .classify:nth-of-type(2) {
   margin-left: 0.35rem;
 }
 
-#selected .BookCity-header .classify:nth-of-type(3) {
+.BookCity-header .classify:nth-of-type(3) {
   margin-left: 0.2rem;
 }
 
-#selected .BookCity-header .BookCity-header-title {
+.BookCity-header .BookCity-header-title {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -188,21 +186,28 @@ p, b, i, div, span, input, a {
   text-align: center;
   margin: auto;
   color: #fff;
-  background-image: url("../imgs/header/h_03.png");
+  background-image: url("../../../imgs/header/h_03.png");
   background-position: center 0.55rem;
   background-repeat: no-repeat;
 }
 
-#selected .BookCity-header .BookCity-header-title h3 {
+.BookCity-header .BookCity-header-title h3 {
   font-size: 0.34rem;
   margin-top: 0.03rem;
 }
 
-#selected .BookCity-header .BookCity-header-title p {
+.BookCity-header .BookCity-header-title p {
   font-size: 0.12rem;
   margin-top: 0.1rem;
   color: rgba(255, 255, 255, 0.6);
   transform: scale(0.8);
+}
+
+#selected {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
 }
 
 #selected .banner {
@@ -260,7 +265,7 @@ p, b, i, div, span, input, a {
   position: absolute;
   left: 0.4rem;
   top: 0.2rem;
-  background: url("../imgs/c1/c1_11.png");
+  background: url("../../../imgs/c1/c1_11.png");
   background-size: 1.95rem 0.53rem;
 }
 
@@ -293,12 +298,12 @@ p, b, i, div, span, input, a {
 }
 
 #selected .new .bookList li .face .diyu {
-  background: url("../imgs/c1/c1_15.png");
+  background: url("../../../imgs/c1/c1_15.png");
   background-size: 1.8rem 2.6rem;
 }
 
 #selected .new .bookList li .face .bali {
-  background: url("../imgs/c1/c1_19.png");
+  background: url("../../../imgs/c1/c1_19.png");
   background-size: 1.8rem 2.6rem;
 }
 
@@ -316,7 +321,176 @@ p, b, i, div, span, input, a {
   font-size: 12px;
 }
 
-#selected .BookCity-footer {
+#list {
+  width: 100%;
+  height: auto;
+  margin-bottom: 0.7rem;
+  margin-top: 1.5rem;
+  background: #dedede;
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#list ul {
+  width: 100%;
+  height: 100%;
+}
+
+#list ul li {
+  width: 100%;
+  height: 2.5rem;
+  margin-bottom: 0.3rem;
+  background-image: url("../../../imgs/c2/c2_03.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+#class {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: none;
+}
+
+#class #intel1 {
+  margin-top: 1.5rem;
+}
+
+#class #intel2 {
+  margin-bottom: 0.7rem;
+}
+
+#class .intel {
+  width: 100%;
+  height: auto;
+}
+
+#class .intel .intel-t {
+  width: 100%;
+  height: 0.8rem;
+  background: #ACE1F8;
+  box-shadow: 0 0 15px #666;
+  position: relative;
+}
+
+#class .intel .intel-t i {
+  width: 0.4rem;
+  height: 0.4rem;
+  position: absolute;
+  left: 0.4rem;
+  top: 0.2rem;
+  background: url("../../../imgs/c3/c3_03.png");
+  background-size: 0.4rem 0.4rem;
+}
+
+#class .intel .intel-t p {
+  color: #666;
+  font-size: 13px;
+  position: absolute;
+  left: 0.9rem;
+  top: 0.2rem;
+}
+
+#class .intel .zhuan {
+  width: 100%;
+  height: auto;
+  background: #f2f2f2;
+  position: relative;
+}
+
+#class .intel .zhuan .zhuan-t {
+  width: 100%;
+  height: 1rem;
+  padding: 0 7%;
+  color: #51B3E0;
+  line-height: 1rem;
+  font-size: 18px;
+  border-bottom: 1px #999 dashed;
+}
+
+#class .intel .zhuan .s1 {
+  width: 100%;
+  height: 0.3rem;
+  position: absolute;
+  left: 0;
+  top: 2.7rem;
+}
+
+#class .intel .zhuan .s2 {
+  width: 100%;
+  height: 0.3rem;
+  position: absolute;
+  left: 0;
+  top: 4.4rem;
+}
+
+#class .intel .zhuan .girl {
+  width: 100%;
+  height: 4rem;
+  padding-left: 0.5rem;
+}
+
+#class .intel .zhuan .girl li {
+  float: left;
+  width: 2.1rem;
+  height: 1.1rem;
+  margin-right: 0.15rem;
+  margin-top: 0.6rem;
+  color: #F6FBFE;
+  line-height: 1.1rem;
+  text-align: center;
+  font-size: 18px;
+}
+
+#class .intel .zhuan .girl li:nth-last-of-type(2n) {
+  background-image: url("../../../imgs/c3/c3_07.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#class .intel .zhuan .girl li:nth-last-of-type(2n+1) {
+  background-image: url("../../../imgs/c3/c3_09.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#class .intel .zhuan .boy {
+  width: 100%;
+  height: 6rem;
+  padding-left: 0.5rem;
+}
+
+#class .intel .zhuan .boy li {
+  float: left;
+  width: 2.1rem;
+  height: 1.1rem;
+  background-image: url(../imgs/imgle/bg1.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  margin-right: 0.15rem;
+  margin-top: 0.6rem;
+  color: #F6FBFE;
+  line-height: 1.1rem;
+  text-align: center;
+  font-size: 18px;
+}
+
+#class .intel .zhuan .boy li:nth-last-of-type(2n) {
+  background-image: url("../../../imgs/c3/c3_07.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+#class .intel .zhuan .boy li:nth-last-of-type(2n+1) {
+  background-image: url("../../../imgs/c3/c3_09.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.BookCity-footer {
   width: 100%;
   height: 1rem;
   position: fixed;
@@ -326,7 +500,7 @@ p, b, i, div, span, input, a {
   background: #151c2b;
 }
 
-#selected .BookCity-footer .bookChange {
+.BookCity-footer .bookChange {
   width: 33.333%;
   height: 100%;
   float: left;
@@ -336,22 +510,27 @@ p, b, i, div, span, input, a {
   color: #646567;
 }
 
-#selected .BookCity-footer .bookChange p {
+.BookCity-footer .bookChange p {
   font-size: 0.44rem;
   text-align: center;
   font-family: "headerfont";
   margin-top: 0.05rem;
 }
 
-#selected .BookCity-footer .bookChange span {
+.BookCity-footer .bookChange span {
   font-size: 0.24rem;
   text-align: center;
   display: block;
   width: 100%;
 }
 
-#selected .BookCity-footer .bookChange:nth-of-type(1) {
-  background-image: url("../imgs/c3/c1_xz.png");
+.BookCity-footer .bookChange:nth-of-type(1) {
+  background-image: url("../../../imgs/c3/c1_xz.png");
   border-left: 1px solid #717171;
   border-right: 1px solid #717171;
+}
+
+.back {
+  background: url("../../../imgs/c1/c_03.png") no-repeat center center;
+  background-size: 100%;
 }
