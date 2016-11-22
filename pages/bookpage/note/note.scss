@@ -17,7 +17,7 @@ $color1:#ec2e56;
     position: fixed;
     top: 0; 
     left: 0;
-    z-index: 100;
+    z-index: 102;
 }
 /*header*/
 
@@ -48,7 +48,7 @@ $color1:#ec2e56;
     .note-box{
         @include box1(100%,auto);
         float: left;
-//      margin-top: 0.30rem;
+        margin-top: 1rem;
 //      overflow: hidden;     
     }
     .note-list{

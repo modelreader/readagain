@@ -382,12 +382,13 @@ $width1:7.5rem;  //盒子宽度
             }
             h3{
                 padding-left: 0.08rem;
-                padding-top: 0.01rem;
+//              padding-top: 0.01rem;
                 height: 0.28rem;
-                line-height: 0.27rem;
-                font-size: 0.20rem;
-                color: 252525;
-                font-variant: all-small-caps;  
+                line-height: 0.28rem;
+                font-size: 0.18rem;
+                color: #252525;
+//              font-variant: all-small-caps;  
+                overflow: hidden;
             }
         }
         

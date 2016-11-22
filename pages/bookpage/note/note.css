@@ -76,51 +76,7 @@ p, b, i, div, span, input, a {
   position: fixed;
   top: 0;
   left: 0;
-  z-index: 100; }
-  #note-header .bookPage-header {
-    width: 100%;
-    height: 1rem;
-    position: relative;
-    background: #29a6dc; }
-    #note-header .bookPage-header .mine-header-title {
-      position: absolute;
-      top: 0;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      margin: auto;
-      min-width: 3rem;
-      height: 100%;
-      text-align: center;
-      margin: auto;
-      color: #fff;
-      background-image: url("../../../imgs/header/h_03.png");
-      background-position: center 0.55rem;
-      background-repeat: no-repeat; }
-      #note-header .bookPage-header .mine-header-title h3 {
-        font-size: 0.34rem;
-        margin-top: 0.03rem; }
-      #note-header .bookPage-header .mine-header-title p {
-        font-size: 0.12rem;
-        margin-top: 0.1rem;
-        color: rgba(255, 255, 255, 0.6);
-        transform: scale(0.8); }
-  #note-header .back-circle-l {
-    width: 0.44rem;
-    height: 0.44rem;
-    border-radius: 50%;
-    border: 0.02rem solid #076cbe;
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    margin: auto;
-    background: #fff;
-    left: 0.25rem;
-    font-family: 'headerfont';
-    line-height: 0.38rem;
-    text-align: center;
-    font-size: 0.16rem;
-    color: #73c4e7; }
+  z-index: 102; }
 
 /*header*/
 #note {
@@ -148,7 +104,8 @@ p, b, i, div, span, input, a {
   #note .note-box {
     width: 100%;
     height: auto;
-    float: left; }
+    float: left;
+    margin-top: 1rem; }
   #note .note-list {
     width: 100%;
     height: auto;
