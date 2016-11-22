@@ -14,31 +14,7 @@
   -webkit-text-stroke-width: 0.2px;
   -moz-osx-font-smoothing: grayscale;
 }
-h1,h2,h3,h4,h5,h6{
-	font-weight:normal;
-	font-size:.3rem;
-}
-h1{
-	font-size:.3rem;
-}
-h2{
-	font-size:.28rem;
-}
-h3{
-	font-size:.26rem;
-}
-h4{
-	font-size:.24rem;
-}
-h5{
-	font-size:.22rem;
-}
-h6{
-	font-size:.2rem;
-}
-p,span{
-	font-size:.18rem;
-}
+
 html{
 	height:100%;
 	width:100%;
@@ -66,6 +42,31 @@ body{
 	height:100%;
 	width:100%;
 	position:relative;
+	h1,h2,h3,h4,h5,h6{
+		font-weight:normal;
+		font-size:.3rem;
+	}
+	h1{
+		font-size:.3rem;
+	}
+	h2{
+		font-size:.28rem;
+	}
+	h3{
+		font-size:.26rem;
+	}
+	h4{
+		font-size:.24rem;
+	}
+	h5{
+		font-size:.22rem;
+	}
+	h6{
+		font-size:.2rem;
+	}
+	p,span{
+		font-size:.18rem;
+	}
 	.header{
 		height:10.15%;
 		background:#29A6DC;
@@ -207,6 +208,7 @@ body{
 				position:relative;
 				padding-left:.55rem;
 				line-height:.38rem;
+				font-size:.3rem;
 				.icon{
 					position:absolute;
 					width:.3rem;

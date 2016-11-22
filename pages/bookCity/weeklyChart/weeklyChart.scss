@@ -37,14 +37,15 @@ body{
 		clear:both;
 	}
 }
-h1,h2,h3,h4,h5,h6{
-	font-weight:normal;
-	font-family:"Araly";
-}
+
 #weeklyChart{
 	width:100%;
 	height:100%;
 	background:#f2f2f2;
+	h1,h2,h3,h4,h5,h6{
+	font-weight:normal;
+		font-family:"Araly";
+	}
 	.header{
 		height:10.15%;
 		background:#29A6DC;
