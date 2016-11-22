@@ -338,7 +338,8 @@ p, b, i, div, span, input, a {
   height: 100%;
 }
 
-#list ul li {
+#list ul li a {
+  display: block;
   width: 100%;
   height: 2.5rem;
   margin-bottom: 0.3rem;
