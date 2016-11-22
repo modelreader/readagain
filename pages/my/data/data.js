@@ -1,15 +1,20 @@
 app.controller('myDataCtrl',['$scope',function($scope){
 	
 }])
-//$(function(){
-//	$(".tx").on("touchend",function(){
-//		$(".sex").removeClass("show");
-//		$(".touxiang").addClass("show");
-//		return false;
-//	})
-//	$(".xb").on("touchend",function(){
-//		$(".touxiang").removeClass("show");
-//		$(".sex").addClass("show");
-//		return false;
-//	})
-//})
+app.directive('ngX',[function(){
+	return {
+		restrict:"AE",
+		link:function($scope,el){
+			$(".tx").on('touchend',function(){
+				$(".touxiang").css("transform","scale(1,1)")
+			});
+			$(".xb").on('touchend',function(){
+				$(".sex").css("transform","scale(1,1)")
+			});
+			$(".quxiao").on('touchend',function(){
+				$(".touxiang").css("transform","scale(0,0)");
+				$(".sex").css("transform","scale(0,0)")
+			})
+		}
+	}
+}])

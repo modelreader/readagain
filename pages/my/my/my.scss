@@ -153,9 +153,10 @@ body{
         border-radius: 0.2rem;
         background: #fff;
         @include center;
-        display:none;
         box-shadow: 0 0 0 10rem rgba(0,0,0,0.5);
         background-size: 100%;
         background-image: url($img-path + "d1/d10_03.png");
+        transition: all 0.8s; 
+        transform: scale(0,0);
     }
 }

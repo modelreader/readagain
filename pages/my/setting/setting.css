@@ -195,8 +195,9 @@ body {
     right: 0;
     margin: auto;
     position: absolute;
-    display: none;
-    box-shadow: 0 0 0 10rem rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 0 0 10rem rgba(0, 0, 0, 0.5);
+    transition: all 0.8s; 
+    transform: scale(0,0); }
     #setting .tixing .title {
       width: 100%;
       height: 0.85rem;
@@ -290,8 +291,9 @@ body {
     right: 0;
     margin: auto;
     position: absolute;
-    display: none;
-    box-shadow: 0 0 0 10rem rgba(0, 0, 0, 0.5); }
+    box-shadow: 0 0 0 10rem rgba(0, 0, 0, 0.5);
+    transition: all 0.8s; 
+    transform: scale(0,0); }
     #setting .cache .title {
       width: 100%;
       height: 0.85rem;
