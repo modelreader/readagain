@@ -204,31 +204,4 @@ body {
     background-image: url("../../../imgs/d1/d10_03.png");
     transition: all 0.8s; 
     transform: scale(0,0); }
-  .mine-header {
-  width: 7.5rem;
-  height: 1rem;
-  position: relative;
-  background: #29a6dc; }
-  .mine-header .mine-header-title {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    margin: auto;
-    min-width: 3rem;
-    height: 100%;
-    text-align: center;
-    margin: auto;
-    color: #fff;
-    background-image: url("../../../imgs/header/h_03.png");
-    background-position: center 0.55rem;
-    background-repeat: no-repeat; }
-    .mine-header .mine-header-title h3 {
-      font-size: 0.34rem;
-      margin-top: 0.03rem; }
-    .mine-header .mine-header-title p {
-      font-size: 0.12rem;
-      margin-top: 0.1rem;
-      color: rgba(255, 255, 255, 0.6);
-      transform: scale(0.8); }
+  
