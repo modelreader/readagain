@@ -1,0 +1,229 @@
+@import 'base.scss';
+*{
+    box-sizing: border-box;
+}
+@font-face {
+  font-family: 'headerfont';
+  src: url('../fonts/headerfont/iconfont.eot');
+  src: url('../fonts/headerfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/headerfont/iconfont.woff') format('woff'),
+  url('../fonts/headerfont/iconfont.ttf') format('truetype'),
+  url('../fonts/headerfont/iconfont.svg#iconfont') format('svg');
+}
+#register{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top:0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    background: #f2f2f2;
+//  overflow: hidden;
+    .header-logo{
+        background: #29a6dc;
+        float: left;
+        width: 100%;
+        height: auto;
+        .login-header{
+            width: 100%;
+            height: 1.4rem;   
+            position: relative;
+            i{
+                position: absolute;
+                left: 0.44rem;
+                top: 0.8rem;
+                z-index: 2;
+                width: 0.42rem;
+                height: 0.42rem;
+                border-radius: 50%;
+                background: url($img-path+'a1/a_03.jpg');
+                background-size: 0.45rem 0.45rem;
+            }
+            .header-title{
+                @include center;
+                min-width: 3rem;
+                height: 100%;
+                line-height: 2rem;
+                text-align: center;
+                margin: auto;
+                color: #fff;
+                font-size: 0.3rem;
+            }
+        }
+        .logo{
+            width: 100%;   
+            color: #fff;  
+            text-align: center;
+            font-size: 0.3rem;
+        }
+        .logo1{
+            height: 3.36rem;
+            line-height: 3.36rem;
+        }
+        .logo2{
+            height: 1.55rem;
+            line-height: 1.55rem;
+        }
+    }
+    #logincon{
+         background: #f2f2f2;
+//      
+        float: left;
+        padding: 0 0.67rem;
+        
+        span{
+            width: 100%;
+            height: auto;
+            line-height: 22px;
+            font-size: 0.1rem;
+            color: #000;
+            
+        }
+        
+        
+        input{
+            width: 6.16rem;
+            height:0.86rem;
+            border-radius: 0.5rem;
+            outline: none;
+            border:1px solid #509dfb;
+            color: #999;
+            text-align: left;
+            margin-top: 0.4rem;
+            padding-left: 1.2rem;
+            position: relative;
+            font-size: 14px;
+            
+        }
+        
+        .kuang{
+            position: relative;
+            height: auto;
+            i{
+                position: absolute;
+                left: 0.44rem;
+                bottom: 0.20rem;
+                width: 0.44rem;
+                height: 0.44rem;
+                background: url($img-path+'a1/a_07.jpg');
+                background-size: 0.44rem 0.44rem;
+                z-index: 3;
+            }
+            span{
+                position: absolute;
+                
+            }
+        }
+        .mima .suo{
+            background: url($img-path+'a2/a_14.png');
+            background-size: 0.44rem 0.44rem;      
+        }   
+        .zaimima .suo{
+            background: url($img-path+'a2/a_14.png');
+            background-size: 0.44rem 0.44rem;      
+        }
+        .phone .sj{
+            background: url($img-path+'a2/b_07.png');
+            background-size: 0.44rem 0.44rem;      
+        }
+        .yanzheng{
+            position: relative;
+            input{
+                width: 65%;
+                height: 0.86rem;
+                float: left;
+                padding-left: 0;
+                text-align: center;
+                padding-bottom: 0.2rem;
+                background: #fff;
+                color: #3abffd;
+            }
+            span{
+                width: 50%;
+                position: absolute;
+                left: 0.55rem;
+                top: 0.8rem;
+                margin: 0 auto;
+                color: #dadada;
+                text-align: center;
+            }
+        }
+        .shuruma{
+            position: relative;
+            input{
+                width: 30%;
+                height: 0.86rem;
+                float: right;
+                padding-left: 0;
+                text-align: center;
+            }
+        }
+        
+//          
+        
+        
+        
+        
+        .num{
+            margin-top: 0.6rem;
+            padding-left: 1.2rem;
+        }
+        
+        .one{
+            float: left;
+            width: 100%;
+            height: auto;
+            position: relative;
+            .zhaohui{
+                width: 50%;
+                height: auto;
+                float: left;
+                position: relative;
+                padding-left: 0.8rem;
+                margin-top: 0.3rem;
+                i{
+                    position: absolute;
+                    left: 0.3rem;
+                    top: 0.13rem;
+                    background: url($img-path+'a1/a_18.jpg');
+                    background-size: 0.25rem 0.25rem;
+                    width: 0.25rem;
+                    height: 0.25rem;
+                }
+            }
+           
+            .zhuce{
+                width: 50%;
+                height: auto;
+                float: right;
+                position: relative;
+                padding-left: 1.4rem;
+                margin-top: 0.3rem;
+                i{
+                    position: absolute;
+                    left: 0.9rem;
+                    top: 0.13rem;
+                    background: url($img-path+'a1/a_20.jpg');
+                    background-size: 0.25rem 0.25rem;
+                    width: 0.25rem;
+                    height: 0.25rem;
+                }
+            }
+        }
+        
+        .denglu {
+            width: 5.7rem;
+            height: 0.7rem;
+
+            text-align: center;
+            background: url($img-path+'a1/a_25.jpg');
+            background-size: 5.7rem 0.7rem;
+            color: #fff;
+            padding: 0;
+            margin-top: 0.75rem;
+            margin-left: 0.25rem;
+        }
+    }
+}

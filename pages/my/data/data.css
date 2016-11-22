@@ -1,0 +1,305 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol, dt, dd, dl {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #fff; }
+
+* {
+  font-family: "Microsoft YaHei",sans-serif;
+  box-sizing: border-box; }
+
+/*图片路径*/
+/*调试块*/
+/*上下居中*/
+/*左右居中*/
+/*居中*/
+/*建盒子*/
+/*正方形*/
+/*圆*/
+/*图片居中*/
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 26px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 20px; }
+
+p, b, i, div, span, input, a {
+  font-size: 16px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #fafafa; }
+  .data{
+   width: 7.5rem; }
+#data {
+  width: 7.5rem; }
+  #data .ul {
+    width: 7rem;
+    height: 3.6rem;
+    box-shadow: 0 0 0.2rem #e1e1e1;
+    border-radius: 0.08rem;
+    background: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.15rem; }
+    #data .ul li {
+      width: 100%;
+      height: 0.9rem;
+      border-bottom: 1px dashed #959595;
+      overflow: hidden;
+      position: relative; }
+      #data .ul li .tus {
+        display: block;
+        width: 0.32rem;
+        height: 0.32rem;
+        border-radius: 50%;
+        float: left;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 100%;
+        background-image: url("../../../imgs/d11/d11_03.png");
+        margin-left: 0.15rem;
+        margin-right: 0.15rem;
+        margin-top: 0.25rem; }
+      #data .ul li .tu2 {
+        background-image: url("../../../imgs/d11/d11_06.png"); }
+      #data .ul li .tu3 {
+        background-image: url("../../../imgs/d11/d11_08.png"); }
+      #data .ul li .tu4 {
+        background-image: url("../../../imgs/d11/d11_10.png"); }
+      #data .ul li .tu5 {
+        background-image: url("../../../imgs/d11/d11_12.png"); }
+      #data .ul li .tu6 {
+        background-image: url("../../../imgs/d11/d11_14.png"); }
+      #data .ul li > a {
+        float: left;
+        width: 5.8rem;
+        height: 0.5rem;
+        margin-top: 0.2rem;
+        position: relative; }
+        #data .ul li > a p {
+          width: 100%;
+          height: 0.27rem;
+          font-size: 0.25rem;
+          font-weight: bold;
+          color: #333;
+          line-height: 0.27rem; }
+        #data .ul li > a .english {
+          display: block;
+          width: 100%;
+          height: 0.23rem;
+          font-size: 0.12rem;
+          color: #333;
+          line-height: 0.28rem;
+          text-transform: uppercase; }
+      #data .ul li .zhuan {
+        width: 0.09rem;
+        height: 0.17rem;
+        position: absolute;
+        right: 0.2rem;
+        top: 0.4rem;
+        background-color: transparent; }
+        #data .ul li .zhuan > a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background-size: 100%;
+          background-image: url("../../../imgs/d11/d1_53.png"); }
+        #data .ul li .zhuan p {
+          color: #666;
+          font-size: 0.16rem;
+          text-align: right;
+          width: 100%; }
+      #data .ul li .zhuan1 {
+        width: 1.5rem; }
+    #data .ul .llast {
+      border: none; }
+  #data .ul1 {
+    height: 1.8rem; }
+  #data .touxiang {
+    width: 4.8rem;
+    height: 2.95rem;
+    border-radius: 0.2rem;
+    background: #fff;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 0 10rem rgba(0, 0, 0, 0.5); }
+    #data .touxiang .title {
+      width: 100%;
+      height: 0.75rem;
+      background: url("../../../imgs/d12/d12_03.png") 0 0 no-repeat;
+      background-size: 100%; }
+    #data .touxiang .sele {
+      width: 100%;
+      height: 2.25rem; }
+      #data .touxiang .sele li {
+        width: 100%;
+        height: 0.9rem;
+        border-bottom: 1px dashed #959595;
+        overflow: hidden;
+        padding-left: 0.15rem; }
+        #data .touxiang .sele li .tuss {
+          display: block;
+          width: 0.32rem;
+          height: 0.32rem;
+          border-radius: 50%;
+          float: left;
+          background-repeat: no-repeat;
+          background-position: 0 0;
+          background-size: 100%;
+          margin-left: 0.15rem;
+          margin-right: 0.15rem;
+          margin-top: 0.25rem; }
+        #data .touxiang .sele li .tus1 {
+          background-image: url("../../../imgs/d11/d12_06.png"); }
+        #data .touxiang .sele li .tus2 {
+          background-image: url("../../../imgs/d11/d12_09.png"); }
+        #data .touxiang .sele li > a {
+          float: left;
+          width: 3.8rem;
+          height: 0.5rem;
+          margin-top: 0.2rem;
+          position: relative; }
+          #data .touxiang .sele li > a p {
+            width: 100%;
+            height: 0.27rem;
+            font-size: 0.25rem;
+            font-weight: bold;
+            color: #333;
+            line-height: 0.27rem; }
+          #data .touxiang .sele li > a .english {
+            display: block;
+            width: 100%;
+            height: 0.23rem;
+            font-size: 0.12rem;
+            color: #333;
+            line-height: 0.28rem;
+            text-transform: uppercase; }
+      #data .touxiang .sele .last {
+        border: none; }
+    #data .touxiang .quxiao {
+      width: 2.54rem;
+      height: 0.65rem;
+      position: absolute;
+      bottom: -0.3rem;
+      left: 1.1rem; }
+      #data .touxiang .quxiao > a {
+        display: block;
+        color: #fff;
+        font-size: 0.24rem;
+        width: 100%;
+        height: 100%;
+        background: url("../../../imgs/d11/d13_11.png") 0 0 no-repeat;
+        background-size: 100%;
+        text-align: center;
+        line-height: 0.65rem; }
+  #data .sex {
+    width: 4.8rem;
+    height: 2.95rem;
+    border-radius: 0.2rem;
+    background: #fff;
+    position: relative;
+    left: 0;
+    right: 0;
+    margin: auto;
+    position: absolute;
+    display: none;
+    box-shadow: 0 0 0 10rem rgba(0, 0, 0, 0.5); }
+    #data .sex .title {
+      width: 100%;
+      height: 0.75rem;
+      background: url("../../../imgs/d11/d13_03.png") 0 0 no-repeat;
+      background-size: 100%; }
+    #data .sex .sele {
+      width: 100%;
+      height: 2.25rem;
+      overflow: hidden;
+      padding-left: 0.5rem;
+      padding-right: 0.5rem; }
+      #data .sex .sele li {
+        width: 50%;
+        height: 100%;
+        float: left; }
+        #data .sex .sele li a {
+          display: block;
+          width: 0.66rem;
+          height: 0.66rem;
+          border-radius: 50%;
+          box-shadow: 0 0 0.2rem rgba(0, 0, 0, 0.5);
+          margin-top: 0.53rem;
+          margin-left: 0.6rem;
+          margin-right: 0.6rem;
+          background: url("../../../imgs/d11/d13_04.png") 0 0 no-repeat;
+          background-size: 100%; }
+        #data .sex .sele li .nan {
+          background: url("../../../imgs/d11/d13_06.png") 0 0 no-repeat;
+          background-size: 100%; }
+      #data .sex .sele .last {
+        border: none; }
+    #data .sex .quxiao {
+      width: 2.54rem;
+      height: 0.65rem;
+      position: absolute;
+      bottom: -0.3rem;
+      left: 1.1rem; }
+      #data .sex .quxiao > a {
+        display: block;
+        color: #fff;
+        font-size: 0.24rem;
+        width: 100%;
+        height: 100%;
+        background: url("../../../imgs/d12/d13_11.png") 0 0 no-repeat;
+        background-size: 100%;
+        text-align: center;
+        line-height: 0.65rem; }
+  #data .show {
+    display: block; }

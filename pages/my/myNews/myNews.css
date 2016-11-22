@@ -1,0 +1,277 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol, dt, dd, dl {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #fff; }
+
+* {
+  font-family: "Microsoft YaHei",sans-serif;
+  box-sizing: border-box; }
+
+/*图片路径*/
+/*调试块*/
+/*上下居中*/
+/*左右居中*/
+/*居中*/
+/*建盒子*/
+/*正方形*/
+/*圆*/
+/*图片居中*/
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 26px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 20px; }
+
+p, b, i, div, span, input, a {
+  font-size: 16px; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  background: #fafafa; }
+
+#myNews {
+  width: 7.5rem;
+  height: 12.18rem;
+  position: relative; }
+  #myNews .xxk {
+    width: 5.71rem;
+    height: 0.84rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.15rem;
+    background-size: 100%;
+    background-image: url("../../../imgs/d6/b4_03.png"); }
+    #myNews .xxk div {
+      width: 2.4rem;
+      height: 0.68rem;
+      float: left;
+      color: #fff;
+      margin-left: 0.2rem;
+      margin-top: 0.08rem; }
+      #myNews .xxk div a {
+        display: block;
+        width: 100%;
+        height: 0.25rem;
+        text-align: center;
+        line-height: 0.25rem;
+        font-size: 0.24rem;
+        color: #fff;
+        margin-top: 0.15rem; }
+      #myNews .xxk div span {
+        display: block;
+        width: 100%;
+        height: 0.14rem;
+        text-align: center;
+        line-height: 0.14rem;
+        font-size: 0.12rem; }
+    #myNews .xxk .right1 {
+      margin-left: 0.5rem; }
+    #myNews .xxk .active {
+      background-size: 100%;
+      background-image: url("../../../imgs/d6/d6_03.png"); }
+  #myNews .ul1 {
+    width: 7rem;
+    height: 6.2rem;
+    box-shadow: 0 0 0.2rem #e1e1e1;
+    border-radius: 0.08rem;
+    background: #fff;
+    display: none;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.23rem; }
+    #myNews .ul1 li {
+      width: 100%;
+      height: 0.9rem;
+      border-bottom: 1px dashed #959595;
+      overflow: hidden; }
+      #myNews .ul1 li .tus {
+        display: block;
+        width: 0.32rem;
+        height: 0.32rem;
+        border-radius: 50%;
+        float: left;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 100%;
+        background-image: url("../../../imgs/d6/d6_07.png");
+        margin-left: 0.15rem;
+        margin-right: 0.15rem;
+        margin-top: 0.25rem; }
+      #myNews .ul1 li > a {
+        float: left;
+        width: 5.8rem;
+        height: 0.5rem;
+        margin-top: 0.2rem;
+        position: relative; }
+        #myNews .ul1 li > a p {
+          width: 100%;
+          height: 0.27rem;
+          font-size: 0.25rem;
+          font-weight: bold;
+          color: #333;
+          line-height: 0.27rem; }
+        #myNews .ul1 li > a .english {
+          display: block;
+          width: 100%;
+          height: 0.23rem;
+          font-size: 0.12rem;
+          color: #333;
+          line-height: 0.28rem;
+          text-transform: uppercase; }
+        #myNews .ul1 li > a .banben {
+          display: block;
+          width: 0.6rem;
+          text-align: right;
+          position: absolute;
+          right: 0;
+          top: 0.1rem;
+          font-size: 0.25rem;
+          font-weight: bold;
+          color: #333; }
+      #myNews .ul1 li .start {
+        width: 4.8rem; }
+      #myNews .ul1 li .zhuan {
+        float: left;
+        width: 0.09rem;
+        height: 0.17rem;
+        margin-left: 0.15rem;
+        margin-top: 0.4rem; }
+        #myNews .ul1 li .zhuan a {
+          display: block;
+          width: 100%;
+          height: 100%;
+          background: url("../../../imgs/d6/d1_53.png") no-repeat 0 0;
+          background-size: 100%; }
+  #myNews .ul2 {
+    width: 7rem;
+    height: 5.6rem;
+    box-shadow: 0 0 0.2rem #e1e1e1;
+    border-radius: 0.08rem;
+    background: #fff;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0.23rem; }
+    #myNews .ul2 li {
+      width: 100%;
+      height: 1.1rem;
+      border-bottom: 1px dashed #959595;
+      overflow: hidden; }
+      #myNews .ul2 li .tus {
+        display: block;
+        width: 0.69rem;
+        height: 0.69rem;
+        border-radius: 50%;
+        float: left;
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 100%;
+        background-image: url("../../../imgs/d6/d7_03.png");
+        margin-left: 0.15rem;
+        margin-right: 0.15rem;
+        margin-top: 0.25rem; }
+      #myNews .ul2 li .right {
+        width: 5.8rem;
+        height: 0.93rem;
+        margin-top: 0.17rem;
+        float: left;
+        position: relative; }
+        #myNews .ul2 li .right > a {
+          display: block;
+          width: 100%;
+          height: 0.5rem; }
+          #myNews .ul2 li .right > a p {
+            width: 100%;
+            height: 0.27rem;
+            font-size: 0.25rem;
+            font-weight: bold;
+            color: #333;
+            line-height: 0.27rem; }
+          #myNews .ul2 li .right > a .english {
+            display: block;
+            width: 100%;
+            height: 0.23rem;
+            font-size: 0.12rem;
+            color: #333;
+            line-height: 0.28rem;
+            text-transform: uppercase; }
+        #myNews .ul2 li .right .zhuan {
+          width: 1.8rem;
+          height: 0.25rem;
+          position: absolute;
+          top: 0.1rem;
+          right: 0.1rem; }
+          #myNews .ul2 li .right .zhuan a {
+            float: left;
+            width: 0.16rem;
+            height: 0.16rem;
+            background: url("../../../imgs/d6/d7_06.png") no-repeat 0 0;
+            background-size: 100%;
+            margin-right: 0.1rem;
+            margin-top: 0.05rem; }
+          #myNews .ul2 li .right .zhuan .time {
+            float: left;
+            width: 1.34rem;
+            height: 0.25rem;
+            text-align: center;
+            color: #666;
+            line-height: 0.25rem;
+            font-size: 0.14rem; }
+        #myNews .ul2 li .right > p {
+          display: block;
+          width: 100%;
+          height: 0.3rem;
+          font-size: 0.16rem;
+          color: #333;
+          margin-top: 0.1rem;
+          line-height: 0.28rem;
+          text-transform: uppercase;
+          overflow: hidden; }
+    #myNews .ul2 .last {
+      border: none; }

@@ -1,0 +1,230 @@
+@import '../../../css/dev/base';
+$width1:7.5rem;  //盒子宽度
+@mixin box-sizing{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+$img-path7:'e7/';
+$margin-bottom1: 0.12rem; //我的书签标题下边距
+$height1: 1.14rem; //我的书签列表高度 
+
+/*列表右边加效果*/
+$bI1:url($img-path+$img-path7+'e7_11.png');
+$bI2:url($img-path+$img-path7+'e7_14.png');
+$bIX1:url($img-path+$img-path7+'e7_21.png');
+$bIX2:url($img-path+$img-path7+'e7_4.png');
+$right1:0;
+$leftX:0.54rem;
+/*列表右边加效果*/
+
+/*header*/
+#bookMark-header{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 100;
+}
+/*header*/
+
+#bookMarks{
+//  float: left;
+    width: $width1;
+//  min-height: 11.34rem;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    margin-top: 1rem;
+    
+    /*笔记条数*/
+    .note-count{
+        @include box1(100%,0.48rem);
+        background-color: #e5e5e5;
+        display: none;
+        a{
+            display: block;
+            @include box1(100%,100%);
+            color: #a8a8a8;
+            font-size: 0.20rem;
+            line-height: 0.48rem;
+            text-align: center;
+        }
+    }
+    /*笔记条数*/
+   
+    /*我的书签*/
+    .bookmark-box{
+        @include box1(100%,auto);
+        float: left;
+//      overflow: hidden;   
+    }
+        
+    /*书签列表*/
+    .bookmark-list{
+        @include box1(100%,$height1);
+        background-color: #fff;
+        margin-bottom: 0.10rem;
+        position: relative;
+//      display: none;
+    }
+    
+    /*选中效果*/
+    .selected{
+        @include box1(100%,$height1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url($img-path+$img-path7+'f3_03.png');
+        background-repeat: no-repeat;
+        background-size: 7.49rem 1.20rem;
+        background-position: 0rem 0rem;
+        @include box-sizing;
+        border-left:1px solid #29dcbc;
+        border-right:1px solid #29dcbc;
+        border-top:1px solid #29dcbc;
+        border-bottom:2px solid #29dcbc;
+        @include box-sizing;
+//      display: none;
+    }
+    .delete1{
+        width: 0.95rem;
+        position: absolute;
+        right: 0;
+        top: 0rem;
+        bottom: 0;
+        .delete-btn{
+            @include cube(0.31rem);
+            @include center;
+            background-image: url($img-path+$img-path7+'e7_07.png');
+            background-repeat: no-repeat;
+            background-size: 0.31rem 0.31rem;
+            background-position: center center; 
+        }
+    }
+    /*选中效果*/
+    .bookmark-listL{
+        @include box1(0.98rem,0.97rem);
+        float: left;
+        .img1{
+            display: block;
+            @include box1(100%,100%);
+            background-image: url($img-path+'e3/c4_54.png');
+            background-repeat: no-repeat;
+            background-size: 0.68rem 0.63rem;
+            background-position: 0.06rem 0.09rem;
+        }
+    }
+    .bookmark-listR{
+        position: absolute;
+        z-index: 101;
+        top: 0;
+        right: 0;
+        @include box1(6.52rem,0.97rem);
+        .titleB{
+            @include box1(100%,0.35rem);
+            color: #151c2b;
+            font-size: 0.24rem;
+            line-height: 0.35rem;
+            text-align: left;
+        }
+        .abstract2{
+            @include box1(100%,0.29rem);
+            color: #505050;
+            font-size: 0.18rem;
+            line-height: 0.29rem;
+            text-align: left;
+            letter-spacing: -0.01rem;
+            margin-bottom: 0.07rem;
+        }
+        .recode{
+            @include box1(100%,0.33rem);
+            padding-right: 0.46rem;
+            .recodeL,.recodeR{
+                display: block;
+                padding-left: 0.33rem;
+                float: left;
+                text-align: right;
+                font-family: tahoma;
+                font-weight: normal;
+                color: #7f7f7f;
+                font-size: 0.16rem;
+                line-height: 0.26rem;
+                position: relative;
+                i{
+                    display: block;
+                    position: absolute;
+                    @include  top-bottom;
+                    left: 0.08rem;
+                    @include cube(0.16rem);
+//                  border-radius: 50%;
+                    background-image: $bIX1;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+//                  box-shadow: 0 0 0.1rem rgba(42,126,255,0.13);
+                    background-size: 0.16rem 0.16rem;
+                }
+                
+            }
+            .recodeR{
+                float: right;
+                i{
+                    @include box1(0.25rem,0.14rem);
+                    left: 0.01rem;
+                    background-image: $bIX2;
+                    background-size: 0.25rem 0.14rem;
+                }
+                
+            }
+        }
+    }
+    .bookmark-listBom{
+        @include box1(100%,0.17rem);
+        overflow: hidden;
+        line-height: 0.04rem;
+        text-align: center;
+        font-size: 0.12rem;
+        color: #999;
+    }
+    /*书签列表*/
+   
+    /*添加书签*/
+    .bookmark-add{
+        @include box1(100%,1.32rem);
+        background-color: #fff;
+    }
+    .add-box1{
+        @include box1(6.89rem,0.85rem);
+        margin: 0.24rem 0.24rem 0.36rem 0.23rem;
+        box-shadow: 0 0 0.1rem rgba(42,126,255,0.13);
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.4rem;
+        text-align: center;
+        line-height: 0.85rem;
+    }
+    .add-btn1{
+        display: inline-block;
+        font-size: 0.24rem;
+        color: #2d2d2d;
+        position: relative;
+        span{
+            @include cube(0.36rem);
+            display: block;
+            position: absolute;
+            left: -0.47rem;
+            @include top-bottom;
+            background-image: url($img-path+'e3/e3_03.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 0.36rem 0.36rem;
+        }
+    }
+    /*添加书签*/
+    
+   
+    /**/
+    /*我的书签*/
+}

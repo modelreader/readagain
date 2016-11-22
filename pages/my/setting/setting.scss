@@ -1,0 +1,403 @@
+@import "../../../css/dev/base";
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #fafafa;
+}
+#setting{
+    width:7.5rem;
+    height:12.11rem;
+    position: relative;
+   .ul{
+        width:7rem;
+        height:3.6rem;
+        box-shadow: 0 0 0.2rem #e1e1e1;
+        border-radius: 0.08rem;
+        background: #fff;
+        margin:{
+            left:auto;
+            right:auto; 
+            top:0.23rem;           
+        };
+        li{
+            width:100%;
+            height:0.9rem;
+            border-bottom: 1px dashed #959595;
+            overflow: hidden;
+            .tus{
+                display:block;
+              @include yuan(0.32rem); 
+              float:left; 
+              background-repeat:no-repeat;
+              background-position: 0 0;
+              background-size: 100%;
+              background-image: url($img-path+ "d2/d2_07.png");
+              margin:{
+                  left:0.15rem;
+                  right:0.15rem;
+                  top:0.25rem;
+              }
+            }
+            .tu2{
+                background-image: url($img-path+ "d2/d2_10.png");
+            }
+            .tu3{
+                background-image:url($img-path+ "d2/d2_12.png");
+            }
+            .tu4{
+                background-image: url($img-path+ "d2/d2_18.png");
+            };
+            &>a{
+                float:left;
+                width:5.8rem;
+                height:0.5rem;
+                margin:{
+                    top:0.2rem;
+                }
+                position: relative;
+                p{
+                    width:100%;
+                    height:0.27rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;
+                    line-height: 0.27rem;
+                };
+                .english{
+                    display: block;
+                    width:100%;
+                    height:0.23rem;
+                    font-size: 0.12rem;
+                    color:#333;
+                    line-height: 0.28rem;
+                    text-transform: uppercase;
+                };
+                .banben{
+                    display: block;
+                    width:0.6rem;
+                    text-align: right;
+                    position:absolute;
+                    right:0;
+                    top:0.1rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;                    
+                }
+            }
+            .start{
+                width:4.8rem;
+            }
+            .zhuan{
+                float:left;
+                width:0.09rem;
+                height:0.17rem;
+                margin:{
+                    left:0.15rem;
+                    top:0.4rem;
+                };
+                a{
+                    display:block;
+                    width:100%;
+                    height:100%; 
+                    background: url($img-path + "d2/d1_53.png") no-repeat 0 0;
+                    background-size: 100%;        
+                }
+            } 
+            .zhuan1{
+                width:0.89rem;
+                height:0.42rem;
+                margin:{
+                    left:0.4rem;
+                    top:0.23rem;
+                }
+                a{
+                  background: url($img-path + "d2/d2_14.png") no-repeat 0 0; 
+                  background-size: 100%;    
+                }
+            }
+        };
+        .llast{
+            border:none;
+        }
+    } 
+    .login{
+        width:7.5rem;
+        height:0.7rem;
+        position: fixed;
+        bottom:0.8rem;
+        a{
+           display: block;
+           width:5.65rem;
+           height:100%; 
+           background: url($img-path + "d2/d2_21.png") 0 0 no-repeat;
+           background-size: 100%;
+           @include left-right;
+           color:#fff;
+           font-size: 0.3rem;
+           text-align: center;
+           line-height: 0.7rem;
+        }        
+    }
+    .tixing{
+        width:4.8rem;
+        height:5.62rem;
+        border-radius: 0.2rem;
+        background: #fff;
+        @include left-right;
+        display:none;
+        box-shadow: 0 0 0 10rem rgba(0,0,0,0.5);
+        .title{
+            width:100%;
+            height:0.85rem;
+            background: url($img-path + "d3/d3_3.png") 0 0 no-repeat;
+            background-size: 100%;
+        }
+        .time{
+        width:4.34rem;
+        height:3.2rem;
+        margin:{
+            left:auto;
+            right:auto;           
+        };
+        li{
+            width:100%;
+            height:0.8rem;
+            border-bottom: 1px dashed #959595;
+            overflow: hidden;
+            padding-left:0.15rem;
+            &>a{
+                float:left;
+                width:3.8rem;
+                height:0.5rem;
+                margin:{
+                    top:0.2rem;
+                }
+                position: relative;
+                p{
+                    width:100%;
+                    height:0.27rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;
+                    line-height: 0.27rem;
+                };
+                .english{
+                    display: block;
+                    width:100%;
+                    height:0.23rem;
+                    font-size: 0.12rem;
+                    color:#333;
+                    line-height: 0.28rem;
+                    text-transform: uppercase;
+                };
+                .banben{
+                    display: block;
+                    width:0.6rem;
+                    text-align: right;
+                    position:absolute;
+                    right:0;
+                    top:0.1rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;                    
+                }
+            }
+            .zhuan{
+                float:left;
+                width:0.3rem;
+                height:0.3rem;
+                margin:{
+                    top:0.3rem;
+                };
+                a{
+                    display:block;
+                    width:100%;
+                    height:100%; 
+                    background: url(../imgs/d3/d3_03.png) no-repeat 0 0;
+                    background-size: 100%;        
+                };
+                .xuanzhong{
+                    background: url(../imgs/d3/d3_06.png) no-repeat 0 0;
+                    background-size: 100%;   
+                }
+            } 
+        };
+    };
+    .sele{
+        width:4.34rem;
+        height:0.6rem;
+        margin:{
+            left:auto;
+            right:auto;
+            top:0.4rem;
+        };
+        a{
+           float:left;
+           width:1.95rem;
+           height:0.58rem;
+           background: url($img-path + "d3/d3_11.png") 0 0 no-repeat;
+           background-size: 100%;
+           color:#28dd8b;
+           font-size: 0.28rem;
+           font-weight: 400;
+           text-align: center;
+           line-height: 0.58rem;
+           margin:{
+               left:0.1rem;
+               right:0.1rem;
+           }
+        };
+        .sure{
+           background: url($img-path + "d3/d3_09.png") 0 0 no-repeat;
+           background-size: 100%;
+           color:#fff; 
+        }
+    }
+}
+.cache{
+        width:4.8rem;
+        height:5.62rem;
+        border-radius: 0.2rem;
+        background: #fff;
+        @include left-right;
+        display:none;
+        box-shadow: 0 0 0 10rem rgba(0,0,0,0.5);
+        .title{
+            width:100%;
+            height:0.85rem;
+            background: url($img-path + "d5/d5_03.png") 0 0 no-repeat;
+            background-size: 100%;
+            position: relative;
+            p{
+               position: absolute;
+               right:0.4rem;
+               top:0.3rem;
+               width:0.9rem;
+               height:0.3rem;
+               &>a{
+                   float:left;
+                   width:0.5rem;
+                   height:0.3rem;
+                   text-align: center;
+                   line-height: 0.3rem;
+                   color:#fff;
+                   font-size: 0.16rem;
+                   margin-right: 0.1rem;
+               } 
+               span{
+                   float:left;
+                   @include yuan(0.3rem)
+                   border:1px solid #fff;
+                   padding:0.04rem;
+                   a{ 
+                       display: block;
+                      @include yuan(0.19rem)
+                      background:#fff;  
+                   }
+               }
+            }
+        }
+        .time{
+        width:4.34rem;
+        height:3.2rem;
+        margin:{
+            left:auto;
+            right:auto;           
+        };
+        li{
+            width:100%;
+            height:0.8rem;
+            border-bottom: 1px dashed #959595;
+            overflow: hidden;
+            padding-left:0.15rem;
+            &>a{
+                float:left;
+                width:3.8rem;
+                height:0.5rem;
+                margin:{
+                    top:0.2rem;
+                }
+                position: relative;
+                p{
+                    width:100%;
+                    height:0.27rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;
+                    line-height: 0.27rem;
+                };
+                .english{
+                    display: block;
+                    width:100%;
+                    height:0.23rem;
+                    font-size: 0.12rem;
+                    color:#333;
+                    line-height: 0.28rem;
+                    text-transform: uppercase;
+                };
+                .banben{
+                    display: block;
+                    width:0.6rem;
+                    text-align: right;
+                    position:absolute;
+                    right:0;
+                    top:0.1rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;                    
+                }
+            }
+            .zhuan{
+                float:left;
+                width:0.3rem;
+                height:0.3rem;
+                margin:{
+                    top:0.3rem;
+                };
+                a{
+                    display:block;
+                    width:100%;
+                    height:100%; 
+                    background: url(../imgs/d3/d3_03.png) no-repeat 0 0;
+                    background-size: 100%;        
+                };
+                .xuanzhong{
+                    background: url(../imgs/d3/d3_06.png) no-repeat 0 0;
+                    background-size: 100%;   
+                }
+            } 
+        };
+    };
+    .sele{
+        width:4.34rem;
+        height:0.6rem;
+        margin:{
+            left:auto;
+            right:auto;
+            top:0.4rem;
+        };
+        a{
+           float:left;
+           width:1.95rem;
+           height:0.58rem;
+           background: url($img-path + "d3/d3_11.png") 0 0 no-repeat;
+           background-size: 100%;
+           color:#28dd8b;
+           font-size: 0.28rem;
+           font-weight: 400;
+           text-align: center;
+           line-height: 0.58rem;
+           margin:{
+               left:0.1rem;
+               right:0.1rem;
+           }
+        };
+        .sure{
+           background: url($img-path + "d3/d3_09.png") 0 0 no-repeat;
+           background-size: 100%;
+           color:#fff; 
+        }
+    }
+}
+}

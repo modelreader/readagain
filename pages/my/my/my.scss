@@ -1,0 +1,161 @@
+@import "../../../css/dev/base";
+*{
+    box-sizing:border-box;
+}
+body{
+    background: #fafafa;
+}
+#my{
+    width:7.5rem;
+    .info{
+        width:7.5rem;
+        height:4rem;
+        .tou{
+            display:block;
+            @include yuan(1.84rem);
+            margin:{
+                top:0.82rem;
+                left:auto;
+                right:auto;
+                bottom:0.34rem;
+            }
+            overflow:hidden;
+            border:none;
+            background: url($img-path +"d1/d1_15.png") 0 0 no-repeat; 
+            background-size: 100%;
+            img{
+                width:1.84rem;
+                height:1.84rem;
+                border:none;
+            } 
+        };
+        .uesrname{
+            width:100%;
+            height:0.5rem;
+            font-size: 0.32rem;
+            color:#3a3a3a;
+            font-weight: bold;
+            text-align: center;
+            line-height: 0.5rem;
+        }
+        .gxqm{
+            width:100%;
+            height:0.5rem;
+            font-size: 0.22rem;
+            color:#3a3a3a;
+            text-align: center;
+            line-height: 0.5rem;
+            img{
+                width:0.22rem;
+                height: 0.23rem;
+            }
+        }
+    };
+    .ul{
+        width:7rem;
+        height:3.6rem;
+        box-shadow: 0 0 0.2rem #e1e1e1;
+        border-radius: 0.08rem;
+        background: #fff;
+        margin:{
+            left:auto;
+            right:auto;            
+        };
+        li{
+            width:100%;
+            height:0.9rem;
+            border-bottom: 1px dashed #959595;
+            overflow: hidden;
+            .tus{
+                display:block;
+              @include yuan(0.32rem); 
+              float:left; 
+              background-repeat:no-repeat;
+              background-position: 0 0;
+              background-size: 100%;
+              background-image: url($img-path + "d1/d1_23.png");
+              margin:{
+                  left:0.15rem;
+                  right:0.15rem;
+                  top:0.25rem;
+              }
+            }
+            .tu2{
+                background-image: url($img-path + "d1/d1_26.png");
+            }
+            .tu3{
+                background-image: url($img-path + "d1/d1_28.png");
+            }
+            .tu4{
+                background-image: url($img-path + "d1/d1_30.png");
+            };
+            a{
+                float:left;
+                width:5.8rem;
+                height:0.5rem;
+                margin:{
+                    top:0.2rem;
+                }
+                position: relative;
+                p{
+                    width:100%;
+                    height:0.27rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;
+                    line-height: 0.27rem;
+                };
+                .english{
+                    display: block;
+                    width:100%;
+                    height:0.23rem;
+                    font-size: 0.12rem;
+                    color:#333;
+                    line-height: 0.28rem;
+                    text-transform: uppercase;
+                };
+                .banben{
+                    display: block;
+                    width:0.6rem;
+                    text-align: right;
+                    position:absolute;
+                    right:0;
+                    top:0.1rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;                    
+                }
+            }
+            .zhuan{
+                float:left;
+                width:0.09rem;
+                height:0.17rem;
+                margin:{
+                    left:0.15rem;
+                    top:0.36rem;
+                };
+                background: url($img-path +'d1/d1_53.png') 0 0 no-repeat; 
+                background-size: 100%;               
+            } 
+        };
+        .llast{
+            border:none;
+        }
+    }
+    .BookCity-footer{
+        position: absolute;
+        bottom:0;
+        left:0;
+    }
+    .zuixin{
+        width:4.8rem;
+        height:2.95rem;
+        border-radius: 0.2rem;
+        background: #fff;
+        @include center;
+        display:none;
+        box-shadow: 0 0 0 10rem rgba(0,0,0,0.5);
+        background-size: 100%;
+        background-image: url($img-path + "d1/d10_03.png");
+    }
+}

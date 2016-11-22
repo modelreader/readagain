@@ -1,0 +1,544 @@
+@import "../../../css/dev/base.scss";
+@font-face {
+  font-family: 'iconfont';
+  src: url('../../../fonts/bookfont/iconfont.eot');
+  src: url('../../../fonts/bookfont/iconfont.eot?#iefix') format('embedded-opentype'),
+  url('../../../fonts/bookfont/iconfont.woff') format('woff'),
+  url('../../../fonts/bookfont/iconfont.ttf') format('truetype'),
+  url('../../../fonts/bookfont/iconfont.svg#iconfont') format('svg');
+}
+.icon{
+  font-family:"iconfont" !important;
+  font-size:16px;font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-stroke-width: 0.2px;
+  -moz-osx-font-smoothing: grayscale;
+}
+html{
+	height:100%;
+	width:100%;
+}
+body{
+	height:100%;
+	width:100%;
+}
+@mixin incenter{
+	position:absolute;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	margin:auto;
+}
+@mixin nofloat{
+	&:after{
+		display:block;
+		content:"";
+		clear:both;
+	}
+}
+#titleSelection{
+	width:100%;
+	height:100%;
+	background:#f2f2f2;
+	.header{
+		width:100%;
+		height:10.15%;
+		background:#29A6DC;
+		position:relative;
+		.back{
+			left:.26rem;
+			@include top-bottom;
+			width:.5rem;
+			height:.5rem;
+			background:#fafafa;
+			border:.02rem solid #076cbe;
+			border-radius:50%;
+			text-align:center;
+			line-height:.5rem;
+			color:#29a6dc;
+			font-size:.25rem;
+		}
+		.voice{
+			right:.37rem;
+			@include top-bottom;
+			width:.5rem;
+			height:.5rem;
+			background:#fafafa;
+			border:.02rem solid #076cbe;
+			border-radius:50%;
+			text-align:center;
+			line-height:.5rem;
+			color:#29a6dc;
+			font-size:.25rem;
+		}
+		.search{
+			width:5.04rem;
+			height:.55rem;
+			background:#fafafa;
+			@include incenter;
+			&:after{
+				left: 100%;
+				top:0;
+				content:"";
+				display:block;
+				width:.55rem;
+				height:.55rem;
+				border-radius:50%;
+				margin-left:-.275rem;
+				background:#fafafa;
+				position:absolute;
+				z-index:0;
+			}
+			&:before{
+				right: 100%;
+				top:0;
+				content:"";
+				display:block;
+				width:.55rem;
+				height:.55rem;
+				border-radius:50%;
+				margin-right:-.275rem;
+				background:#fafafa;
+				position:absolute;
+				z-index:0;
+			}
+			input{
+				width:100%;
+				height:100%;
+				border:none;
+				outline:none;
+				padding-left:.47rem;
+				font-size:.22rem;
+				color:#c4c4c4;
+				background:transparent;
+				position:absolute;
+				top:0;
+				left:0;
+				z-index:0;
+			}
+			.icon{
+				width:.55rem;
+				height:.55rem;
+				position:absolute;
+				left:-.2rem;
+				top:0;
+				text-align:center;
+				line-height:.55rem;
+				color:#b2b2b2;
+				z-index:5;
+				&:after{
+					content:"";
+					height:100%;
+					right:0;
+					box-shadow:-.01rem 0 .03rem #e5e5e5;
+					display:block;
+					width:.01rem;
+					position:absolute;
+					top:0;
+				}
+			}
+		}
+		.hide{
+			position:absolute;
+			width:100%;
+			height:4.2rem;
+			left:0;
+			box-shadow:0 100rem 0 100rem  rgba(0,0,0,.3);
+			top:100%;
+			overflow:hidden;
+			z-index:15;
+			background:#fff;
+			border-bottom-left-radius:.2rem;
+			border-bottom-right-radius:.2rem;
+			display:none;
+			.hide-top{
+				width:100%;
+				height:1.17rem;
+				background:#fff;
+				position:relative;
+				.center{
+					width:5rem;
+					height:.84rem;
+					@include incenter;
+					background:#2a3441;
+					&:after{
+						content:"";
+						width:.84rem;
+						height:.84rem;
+						border-radius:50%;
+						background:#2a3441;
+						left: -.42rem;
+						top:0;
+						z-index:0;
+						display:block;
+						position:absolute;
+					}
+					&:before{
+						content:"";
+						width:.84rem;
+						height:.84rem;
+						border-radius:50%;
+						background:#2a3441;
+						right: -.42rem;
+						top:0;
+						z-index:0;
+						display:block;
+						position:absolute;
+					}
+					.centerl{
+						position:relative;
+						height:100%;
+						width:50%;
+						float:left;
+						.click{
+							width:1.87rem;
+							height:.68rem;
+							position:absolute;
+							@include top-bottom;
+							left:0;
+							text-align:center;
+							line-height:.68rem;
+							color:#fff;
+							padding:.04rem;
+							z-index:1;
+							&:after{
+								content:"";
+								width:.68rem;
+								height:.68rem;
+								border-radius:50%;
+								left: -.34rem;
+								top:0;
+								z-index:0;
+								display:block;
+								position:absolute;
+							}
+							&:before{
+								content:"";
+								width:.68rem;
+								height:.68rem;
+								border-radius:50%;
+								right: -.34rem;
+								top:0;
+								z-index:0;
+								display:block;
+								position:absolute;
+							}
+							.clickl{
+								width:100%;
+								height:.6rem;
+								position:absolute;
+								@include top-bottom;
+								left:0;
+								text-align:center;
+								line-height:.6rem;
+								color:#fff;
+								z-index: 1;
+								&:after{
+									content:"";
+									width:.6rem;
+									height:.6rem;
+									border-radius:50%;
+									left: -.3rem;
+									@include top-bottom;
+									z-index:0;
+									display:block;
+									position:absolute;
+								}
+								&:before{
+									content:"";
+									width:.6rem;
+									height:.6rem;
+									border-radius:50%;
+									@include top-bottom;
+									right: -.3rem;
+									top:0;
+									z-index:0;
+									display:block;
+									position:absolute;
+								}
+								h2{
+									width:100%;
+									position:absolute;
+									font:.24rem/.24rem "微软雅黑";
+									text-align:center;
+									color:#fff;
+									font-weight:normal;
+									top:.1rem;
+								}
+								h5{
+									width:200%;
+									position:absolute;
+									font:.1rem/.1rem "微软雅黑";
+									text-align:left;
+									z-index: 1;
+									left: -10%;
+									color:#fff;
+									opacity: .8;
+									font-weight:normal;
+									bottom:.1rem;
+								}
+							}
+						}	
+						.now{
+							background:#fff;
+							&:after{
+								background:#fff;
+							}
+							&:before{
+								background:#fff;
+							}
+							.clickl{
+								background:#29a6dc;
+								&:after{
+									background:#29a6dc;
+								}
+								&:before{
+									background:#29a6dc;
+								}
+							}
+						}
+						.right{
+							right:0;
+							left:auto;
+							.clickl{
+								h5{
+									left:0;
+								}
+							}
+						}
+					}
+				}
+			}
+			.hide-bottom{
+				width:100%;
+				height:3rem;
+				ul{
+					width:100%;
+					height:2.5rem;
+					padding:.21rem 0;
+					position:relative;
+					z-index: 1;
+					@include nofloat;
+					li{
+						width:33.33333333%;
+						height:33.3333333%;
+						padding:0 .22rem;
+						position:relative;
+						float:left;
+						.inside{
+							width:1.4rem;
+							height:.44rem;
+							@include incenter;
+							border-top:.02rem solid #2a3441;
+							border-bottom:.02rem solid #2a3441;
+							display:block;
+							&:after{
+								content:"";
+								display:block;
+								position:absolute;
+								top:-.02rem;
+								left:-.22rem;
+								width:.40rem;
+								height:.40rem;
+								border:.02rem solid #2a3441;
+								border-radius:50%;
+							}
+							&:before{
+								content:"";
+								display:block;
+								position:absolute;
+								top:-.02rem;
+								right:-.22rem;
+								width:.40rem;
+								height:.40rem;
+								border:.02rem solid #2a3441;
+								border-radius:50%;
+							}
+							a{
+								width:100%;
+								height:100%;
+								background:#fff;
+								display:block;
+								text-align:center;
+								line-height:.44rem;
+								font-size:.22rem;
+								color:#2a3441;
+								position:relative;
+								z-index: 10;
+							}
+						}
+					}
+					.now{
+						.inside{
+							background:#29a6dc;
+							border:0;
+							&:after{
+								border:0;
+								background:#29a6dc;
+								width:.44rem;
+								height:.44rem;
+								top:0;
+							}
+							&:before{
+								border:0;
+								background:#29a6dc;
+								width:.44rem;
+								height:.44rem;
+								top:0;
+							}
+							a{
+								background:#29a6dc;
+								color:#fff;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+	.content{
+		width:100%;
+		height:89.85%;
+		overflow:auto;
+		.book{
+			width:100%;
+			padding:.3rem 0;
+			ul{
+				width:100%;
+				li{
+					margin-bottom:.16rem;
+					box-shadow:0 0 .1rem #e6e6e6;
+					background:#fff;
+					height:3.75rem;
+					border-radius:.1rem;
+					position:relative;
+					overflow:hidden;
+					.img{
+						width:2.7rem;
+						height:100%;
+						position:absolute;
+						left: 0;
+						top:0;
+						.imgl{
+							width:2.45rem;
+							height:3.48rem;
+							@include incenter;
+							background:url($img-path+"b4/b3_07.png") top center no-repeat;
+							background-size:2.45rem 3.48rem;
+						}
+					}
+					.fonts{
+						width:4.44rem;
+						height:100%;
+						float:right;
+						padding:.3rem 0;
+						position:relative;
+						h2{
+							font: .26rem/.26rem "微软雅黑";
+							color:#333;
+							font-weight:normal;
+						}
+						h5{
+							margin-top:.15rem;
+							font: .13rem/.13rem "Araly";
+							color:#bdbdbd;
+						}
+						p{
+							margin-top:.08rem;
+							line-height:.34rem;
+							color:#666666;
+							width:3.85rem;
+							font-size:.20rem;
+						}
+						.bottom{
+							width:100%;
+							margin-top:.42rem;
+							h5{
+								font :.18rem/.18rem "Araly";
+								color:#bdbdbd;
+								margin-bottom:.1rem;
+							}
+							ul{
+								@include nofloat;
+								margin-top:.16rem;
+								li{
+									float:left;
+									margin-right:.05rem;
+									width:.24rem;
+									height:.24rem;
+									box-shadow:none;
+									font-size:.15rem;
+									color:#ffd800;
+								}
+								.special{
+									color:#a9a9a9;
+								}
+							}
+							.button{
+								width:1.3rem;
+								height:.57rem;
+								position:absolute;
+								background:#29a6dc;
+								right:.55rem;
+								bottom:.32rem;
+								&:after{
+									content:"";
+									display:block;
+									width:.57rem;
+									height:.57rem;
+									position:absolute;
+									border-radius:50%;
+									background:#29a6dc;
+									top:0;
+									left:-.235rem;
+								}
+								&:before{
+									content:"";
+									display:block;
+									width:.57rem;
+									height:.57rem;
+									position:absolute;
+									border-radius:50%;
+									background:#29a6dc;
+									top:0;
+									right:-.235rem;
+								}
+								.font{
+									width:1.25rem;
+									height:.2rem;
+									position:absolute;
+									@include incenter;
+									line-height:.2rem;
+									padding-left:.25rem;
+									color:#fff;
+									font-size:.14rem;
+									z-index: 10;
+									.icon{
+
+									}
+									span{
+										font-size:.2rem;
+									}
+								}
+								.point{
+									width:.04rem;
+									height:.04rem;
+									background:#fff;
+									@include top-bottom;
+								}
+								.lp{
+									left: -.16rem;
+									z-index: 4;
+								}
+								.rp{
+									right:-.16rem;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

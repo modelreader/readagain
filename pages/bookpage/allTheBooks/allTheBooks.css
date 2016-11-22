@@ -1,0 +1,212 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol, dt, dd, dl {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #fff; }
+
+* {
+  font-family: "Microsoft YaHei",sans-serif;
+  box-sizing: border-box; }
+
+/*图片路径*/
+/*调试块*/
+/*上下居中*/
+/*左右居中*/
+/*居中*/
+/*建盒子*/
+/*正方形*/
+/*圆*/
+/*图片居中*/
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 26px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 20px; }
+
+p, b, i, div, span, input, a {
+  font-size: 16px; }
+
+/*header*/
+#allTheBooks-header {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+
+/*header*/
+#allTheBooks {
+  width: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  margin-top: 1rem;
+  /*最新书评*/
+  /*最新书评*/ }
+  #allTheBooks .review-box {
+    width: 100%;
+    height: auto;
+    float: left;
+    margin-top: 0.25rem; }
+  #allTheBooks .review-list {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0.23rem;
+    width: 6.89rem;
+    height: 1.54rem;
+    border-radius: 0.10rem;
+    box-shadow: 0 0 0.1rem rgba(42, 126, 255, 0.13);
+    background-color: #fdfdfd; }
+  #allTheBooks .review-listL {
+    width: 1.26rem;
+    height: 100%;
+    float: left; }
+    #allTheBooks .review-listL .img1 {
+      display: block;
+      width: 0.8rem;
+      height: 0.8rem;
+      border-radius: 50%;
+      background-image: url("../../../imgs/e1/c4_31.png");
+      background-repeat: no-repeat;
+      background-size: 0.81rem 0.80rem;
+      background-position: 0 0;
+      margin-left: 0.20rem;
+      _margin-left: 0.10rem;
+      margin-top: 0.25rem; }
+    #allTheBooks .review-listL .img2 {
+      background-image: url("../../../imgs/e1/c4_46.png");
+      background-size: 0.80rem 0.80rem; }
+  #allTheBooks .review-listR {
+    width: 5.63rem;
+    height: 100%;
+    float: left; }
+    #allTheBooks .review-listR .spzy {
+      width: 100%;
+      height: 0.87rem;
+      padding: 0.19rem 0.5rem 0 0.07rem;
+      line-height: 0.34rem;
+      font-size: 0.22rem;
+      color: #666;
+      font-weight: normal;
+      text-align: left;
+      overflow: hidden; }
+    #allTheBooks .review-listR .dashed1 {
+      width: 5.39rem;
+      height: 0.24rem;
+      padding: 0 0.24rem 0 0.07rem;
+      line-height: 0.14rem;
+      font-size: 0.14rem;
+      color: #a0a0a0;
+      font-weight: normal;
+      text-align: left;
+      overflow: hidden;
+      background-color: #fff; }
+    #allTheBooks .review-listR .recode {
+      width: 100%;
+      height: 0.35rem;
+      padding-right: 0.26rem; }
+      #allTheBooks .review-listR .recode .recodeL, #allTheBooks .review-listR .recode .recodeR {
+        display: block;
+        padding-left: 0.36rem;
+        float: left;
+        text-align: right;
+        font-family: tahoma;
+        font-weight: normal;
+        color: #a4a1a1;
+        font-size: 0.18rem;
+        line-height: 0.36rem;
+        position: relative; }
+        #allTheBooks .review-listR .recode .recodeL i, #allTheBooks .review-listR .recode .recodeR i {
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0rem;
+          width: 0.35rem;
+          height: 0.35rem;
+          border-radius: 50%;
+          background-image: url("../../../imgs/e1/c4_39.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          box-shadow: 0 0 0.1rem rgba(42, 126, 255, 0.13);
+          background-size: 0.16rem 0.16rem; }
+      #allTheBooks .review-listR .recode .recodeR {
+        float: right; }
+        #allTheBooks .review-listR .recode .recodeR i {
+          left: 0;
+          background-image: url("../../../imgs/e1/c4_42.png");
+          background-size: 0.14rem 0.11rem; }
+
+/*footer*/
+.bookpage-footer {
+  width: 100%;
+  height: 1.28rem;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  .bookpage-footer .bookpage-footer-m {
+    width: 100%;
+    background: #151c2b;
+    height: 100%;
+    position: relative; }
+    .bookpage-footer .bookpage-footer-m .bookpage-footer-btn {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin: auto;
+      width: 1.4rem;
+      height: 0.51rem;
+      background: url("../../../imgs/e4/e4_07.png") no-repeat center center;
+      background-size: 100%;
+      color: #454545;
+      font-size: 0.2rem;
+      text-align: center;
+      line-height: 0.51rem; }
+
+/*footer*/

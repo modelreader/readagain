@@ -1,0 +1,156 @@
+@import '../../../css/dev/base';
+
+$width1:7.5rem;  //盒子宽度
+@mixin box-sizing{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+
+/*header*/
+#allTheBooks-header{
+    width: 100%;
+    height: 1rem;
+    position: fixed;
+    top: 0; 
+    left: 0;
+    z-index: 100;
+}
+
+/*header*/
+
+#allTheBooks{
+    width: $width1;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: auto;
+    margin-top: 1rem;  
+    /*最新书评*/
+    .review-box{
+        @include box1(100%,auto);
+        float: left;
+        margin-top: 0.25rem;   
+    }
+    .review-list{
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 0.23rem;
+        @include box1(6.89rem,1.54rem);
+        border-radius: 0.10rem;
+        box-shadow: 0 0 0.1rem rgba(42,126,255,0.13);
+        background-color: #fdfdfd;
+    }
+    .review-listL{
+       @include box1(1.26rem,100%);
+       float: left;
+        .img1{
+            display: block;
+            @include cube(0.80rem);
+            border-radius: 50%;
+            background-image: url($img-path+'e1/c4_31.png');
+            background-repeat: no-repeat;
+            background-size: 0.81rem 0.80rem;
+            background-position: 0 0;
+            margin-left: 0.20rem;
+            _margin-left: 0.10rem;
+            margin-top: 0.25rem;
+        }
+        .img2{
+            background-image: url($img-path+'e1/c4_46.png');
+            background-size: 0.80rem 0.80rem;
+        }
+    }
+    .review-listR{
+       @include box1(5.63rem,100%);
+       float: left;
+        .spzy{
+            @include box1(100%,0.87rem);
+            padding: 0.19rem 0.5rem 0 0.07rem;
+            line-height: 0.34rem;
+            font-size: 0.22rem;
+            color: #666;
+            font-weight: normal;
+            text-align: left;
+            overflow: hidden;
+        }
+        .dashed1{
+            @include box1(5.39rem,0.24rem);
+            padding: 0 0.24rem 0 0.07rem;
+            line-height: 0.14rem;
+            font-size: 0.14rem;
+            color: #a0a0a0;
+            font-weight: normal;
+            text-align: left;
+            overflow: hidden;
+            background-color: #fff; 
+        }
+        .recode{
+            @include box1(100%,0.35rem);
+            padding-right: 0.26rem;
+            .recodeL,.recodeR{
+                display: block;
+                padding-left: 0.36rem;
+                float: left;
+                text-align: right;
+                font-family: tahoma;
+                font-weight: normal;
+                color: #a4a1a1;
+                font-size: 0.18rem;
+                line-height: 0.36rem;
+                position: relative;
+                i{
+                    display: block;
+                    position: absolute;
+                    top: 0;
+                    left: 0rem;
+                    @include cube(0.35rem);
+                    border-radius: 50%;
+                    background-image: url($img-path+'e1/c4_39.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    box-shadow: 0 0 0.1rem rgba(42,126,255,0.13);
+                    background-size: 0.16rem 0.16rem;
+                }
+                
+            }
+            .recodeR{
+                float: right;
+                i{
+                    left: 0;
+                    background-image: url($img-path+'e1/c4_42.png');
+                    background-size: 0.14rem 0.11rem;
+                }
+                
+            }
+        }
+    
+    }
+    /*最新书评*/
+}
+
+/*footer*/
+.bookpage-footer{
+    width: 100%;
+    height: 1.28rem; 
+    position: fixed;
+    bottom: 0;
+    left: 0;   
+    .bookpage-footer-m{
+        width: 100%;
+        background:#151c2b;
+        height: 100%;    
+        position: relative;
+        .bookpage-footer-btn{
+            @include center;
+            margin: auto;
+            width: 1.4rem;
+            height: 0.51rem;
+            background: url($img-path+'e4/e4_07.png') no-repeat center center;
+            background-size: 100%;
+            color: #454545;
+            font-size: 0.2rem;
+            text-align: center;
+            line-height: 0.51rem;
+        }
+    }    
+}
+/*footer*/

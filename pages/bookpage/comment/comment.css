@@ -1,0 +1,267 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol, dt, dd, dl {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #fff; }
+
+* {
+  font-family: "Microsoft YaHei",sans-serif;
+  box-sizing: border-box; }
+
+/*图片路径*/
+/*调试块*/
+/*上下居中*/
+/*左右居中*/
+/*居中*/
+/*建盒子*/
+/*正方形*/
+/*圆*/
+/*图片居中*/
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 26px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 20px; }
+
+p, b, i, div, span, input, a {
+  font-size: 16px; }
+
+/*header*/
+#comment-header {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+
+/*header*/
+#comment {
+  width: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+  overflow: auto;
+  /*评论*/ }
+  #comment .startLevel {
+    width: 100%;
+    height: 1.66rem;
+    background: #fff;
+    position: relative; }
+    #comment .startLevel .start-ul {
+      width: 100%;
+      height: 1.66rem;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      padding: 0.42rem 0 0.42rem 0.88rem; }
+    #comment .startLevel .start-li {
+      width: 0.82rem;
+      height: 0.82rem;
+      float: left;
+      margin-right: 0.39rem;
+      background-image: url("../../../imgs/e6/e5_10.png");
+      background-position: center center;
+      background-size: 0.82rem 0.82rem; }
+    #comment .startLevel .start-border {
+      width: 100%;
+      height: 0.02rem;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background-color: #999; }
+  #comment .com-box {
+    width: 100%;
+    height: auto;
+    background-color: #fff;
+    margin-top: 0.4rem; }
+    #comment .com-box .line {
+      width: 6.17rem;
+      height: 0.01rem;
+      background-color: #d1d1d1;
+      margin-left: 0.39rem;
+      position: relative; }
+      #comment .com-box .line .circle {
+        width: 0.03rem;
+        height: 0.03rem;
+        position: absolute;
+        top: -0.01rem;
+        background-color: #d3d3d3; }
+      #comment .com-box .line .circle1 {
+        left: -0.01rem; }
+      #comment .com-box .line .circle2 {
+        left: 0.49rem; }
+      #comment .com-box .line .circle3 {
+        left: 2.09rem; }
+      #comment .com-box .line .circle4 {
+        left: 2.39rem; }
+      #comment .com-box .line .circle5 {
+        left: 3.59rem; }
+      #comment .com-box .line .circle6 {
+        left: 4.29rem; }
+      #comment .com-box .line .circle7 {
+        left: 4.39rem; }
+      #comment .com-box .line .circle8 {
+        right: -0.01rem; }
+    #comment .com-box .com-inf {
+      width: 7.02rem;
+      height: 3.24rem;
+      margin: 0.02rem auto 2.38rem;
+      box-shadow: 0.01rem 0.01rem 0.12rem rgba(198, 198, 198, 0.75);
+      border-radius: 0.08rem; }
+      #comment .com-box .com-inf .com-con {
+        width: 100%;
+        height: 100%;
+        padding: 0.05rem 0.26rem 0 0.15rem;
+        line-height: 0.34rem;
+        font-size: 0.22rem;
+        color: #666;
+        font-weight: normal;
+        text-align: left; }
+
+/*遮罩*/
+#mask1 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url("../../../imgs/e6/mask.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 7.50rem 13.34rem;
+  filter: blur(3px);
+  z-index: 100;
+  display: none; }
+
+#mask2 {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.2);
+  z-index: 101;
+  display: none; }
+
+div.show1 {
+  display: block; }
+
+/*遮罩*/
+/*评论状态-失败*/
+.fail1 {
+  display: none;
+  width: 4.78rem;
+  height: 2.95rem;
+  border-radius: 0.05rem;
+  left: 0;
+  right: 0;
+  margin: auto;
+  position: absolute;
+  top: 4.70rem;
+  background-image: url("../../../imgs/e6/e6_03.png");
+  background-repeat: no-repeat;
+  background-position: center 0;
+  background-size: 4.78rem 2.97rem;
+  z-index: 102; }
+  .fail1 .cancel, .fail1 .set {
+    position: absolute;
+    bottom: 0.2rem;
+    width: 1.95rem;
+    height: 0.58rem;
+    border-radius: 0.4rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border: 1px solid #28dd8b;
+    line-height: 0.58rem;
+    text-align: center;
+    font-size: 0,.28rem; }
+  .fail1 .cancel {
+    color: #28dd8b;
+    background-color: #fff;
+    left: 0.30rem; }
+  .fail1 .set {
+    color: #fff;
+    background-color: #28dd8b;
+    right: 0.30rem; }
+
+/*评论状态-失败*/
+/*评论状态-成功*/
+.success1 {
+  background-image: url("../../../imgs/e5/e5_03.png");
+  background-size: 4.78rem 2.95rem; }
+
+/*评论状态-成功*/
+/*footer*/
+.bookpage-footer {
+  width: 100%;
+  height: 1.28rem;
+  position: fixed;
+  bottom: 0;
+  left: 0; }
+  .bookpage-footer .bookpage-footer-m {
+    width: 100%;
+    background: #151c2b;
+    height: 100%;
+    position: relative; }
+    .bookpage-footer .bookpage-footer-m .bookpage-footer-btn {
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      margin: auto;
+      width: 1.4rem;
+      height: 0.51rem;
+      background: url("../../../imgs/e4/e4_07.png") no-repeat center center;
+      background-size: 100%;
+      color: #454545;
+      font-size: 0.2rem;
+      text-align: center;
+      line-height: 0.51rem; }
+
+/*footer*/

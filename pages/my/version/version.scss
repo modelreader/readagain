@@ -1,0 +1,16 @@
+@import "../../../css/dev/base";
+*{
+    box-sizing: border-box;
+}
+body{
+    background: #fafafa;
+}
+#version{
+    width:7.5rem;
+    .con{
+        width:7.5rem;
+        height:7.87rem;
+        background-size: 100%;
+        background-image: url($img-path + "d9/d9_03.png");
+    }
+}

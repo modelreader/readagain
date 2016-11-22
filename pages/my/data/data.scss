@@ -1,0 +1,278 @@
+@import "../../../css/dev/base";
+*{
+    box-sizing:border-box;
+}
+body{
+    background: #fafafa;
+}
+#data{
+    width:7.5rem;
+    .ul{
+        width:7rem;
+        height:3.6rem;
+        box-shadow: 0 0 0.2rem #e1e1e1;
+        border-radius: 0.08rem;
+        background: #fff;
+        margin:{
+            left:auto;
+            right:auto;
+            top:0.15rem;            
+        };
+        li{
+            width:100%;
+            height:0.9rem;
+            border-bottom: 1px dashed #959595;
+            overflow: hidden;
+            position: relative;
+            .tus{
+                display:block;
+              @include yuan(0.32rem); 
+              float:left; 
+              background-repeat:no-repeat;
+              background-position: 0 0;
+              background-size: 100%;
+              background-image: url($img-path + "d11/d11_03.png");
+              margin:{
+                  left:0.15rem;
+                  right:0.15rem;
+                  top:0.25rem;
+              }
+            }
+            .tu2{
+                background-image: url($img-path + "d11/d11_06.png");
+            };
+            .tu3{
+                background-image: url($img-path + "d11/d11_08.png");
+            };
+            .tu4{
+                background-image: url($img-path + "d11/d11_10.png");
+            }
+            .tu5{
+                background-image: url($img-path + "d11/d11_12.png");
+            }
+            .tu6{
+                background-image: url($img-path + "d11/d11_14.png");
+            };
+            &>a{
+                float:left;
+                width:5.8rem;
+                height:0.5rem;
+                margin:{
+                    top:0.2rem;
+                }
+                position: relative;
+                p{
+                    width:100%;
+                    height:0.27rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;
+                    line-height: 0.27rem;
+                };
+                .english{
+                    display: block;
+                    width:100%;
+                    height:0.23rem;
+                    font-size: 0.12rem;
+                    color:#333;
+                    line-height: 0.28rem;
+                    text-transform: uppercase;
+                };                
+            }
+            .zhuan{
+                width:0.09rem;
+                height:0.17rem;
+                position: absolute;
+                right:0.2rem;
+                top:0.4rem;
+                background-color: transparent;
+                &>a{
+                    display: block;
+                    width:100%;
+                    height:100%;
+                  background-size: 100%;
+                  background-image: url($img-path+"d11/d1_53.png");              
+                };
+                p{
+                    color:#666;
+                    font-size: 0.16rem;
+                    text-align: right;
+                    width:100%;                    
+                }
+            } 
+            .zhuan1{
+                width:1.5rem;
+            }
+        };
+        .llast{
+            border:none;
+        }
+    };
+    .ul1{
+        height:1.8rem;
+    };
+    .touxiang{
+        width:4.8rem;
+        height:2.95rem;
+        border-radius: 0.2rem;
+        background: #fff;
+        position: relative;
+        @include left-right;
+        display: none;
+        box-shadow: 0 0 0 10rem rgba(0,0,0,0.5);
+        .title{
+            width:100%;
+            height:0.75rem;
+            background: url($img-path + "d12/d12_03.png") 0 0 no-repeat;
+            background-size: 100%;
+        };
+        .sele{
+            width:100%;
+            height:2.25rem;
+            li{
+                width:100%;
+                height:0.9rem;
+                border-bottom: 1px dashed #959595;
+                overflow: hidden;
+                padding-left:0.15rem;
+                .tuss{
+                display:block;
+                  @include yuan(0.32rem); 
+                  float:left; 
+                  background-repeat:no-repeat;
+                  background-position: 0 0;
+                  background-size: 100%;                
+                  margin:{
+                      left:0.15rem;
+                      right:0.15rem;
+                      top:0.25rem;
+                  }
+               };
+               .tus1{
+                  background-image: url($img-path + "d11/d12_06.png"); 
+               };
+               .tus2{
+                  background-image: url($img-path + "d11/d12_09.png"); 
+               };
+               &>a{
+                float:left;
+                width:3.8rem;
+                height:0.5rem;
+                margin:{
+                    top:0.2rem;
+                }
+                position: relative;
+                p{
+                    width:100%;
+                    height:0.27rem;
+                    font-size: 0.25rem;
+                    font-weight: bold;
+                    color:#333;
+                    line-height: 0.27rem;
+                };
+                .english{
+                    display: block;
+                    width:100%;
+                    height:0.23rem;
+                    font-size: 0.12rem;
+                    color:#333;
+                    line-height: 0.28rem;
+                    text-transform: uppercase;
+                };
+               }
+            };
+            .last{
+                border:none;
+            }
+        };
+        .quxiao{
+           width: 2.54rem;
+           height:0.65rem;
+           position: absolute;
+           bottom: -0.3rem;
+           left:1.1rem;
+           &>a{
+               display: block;
+               color:#fff;
+               font-size: 0.24rem;
+               width:100%;
+               height:100%;
+               background: url($img-path + "d11/d13_11.png") 0 0 no-repeat;
+            background-size: 100%;
+            text-align: center;
+            line-height: 0.65rem;
+           }
+        }
+    }
+    .sex{
+        width:4.8rem;
+        height:2.95rem;
+        border-radius: 0.2rem;
+        background: #fff;
+        position: relative;
+        @include left-right;
+        display: none;
+        box-shadow: 0 0 0 10rem rgba(0,0,0,0.5);
+        .title{
+            width:100%;
+            height:0.75rem;
+            background: url($img-path + "d11/d13_03.png") 0 0 no-repeat;
+            background-size: 100%;
+        };
+        .sele{
+            width:100%;
+            height:2.25rem;
+            overflow: hidden;
+            padding:{
+                left:0.5rem;
+                right:0.5rem;
+            }
+            li{
+                width:50%;
+                height:100%;
+                float: left;
+                a{
+                    display: block;
+                    @include yuan(0.66rem)
+                    box-shadow: 0 0 0.2rem rgba(0,0,0,0.5);
+                    margin:{
+                        top:0.53rem;
+                        left:0.6rem;
+                        right:0.6rem;
+                    }
+                    background: url($img-path + "d11/d13_04.png") 0 0 no-repeat;
+                    background-size: 100%;
+                };
+                .nan{
+                     background: url($img-path + "d11/d13_06.png") 0 0 no-repeat;
+                     background-size: 100%;
+                }
+                
+            };
+            .last{
+                border:none;
+            }
+        };
+        .quxiao{
+           width: 2.54rem;
+           height:0.65rem;
+           position: absolute;
+           bottom: -0.3rem;
+           left:1.1rem;
+           &>a{
+               display: block;
+               color:#fff;
+               font-size: 0.24rem;
+               width:100%;
+               height:100%;
+               background: url($img-path + "d12/d13_11.png") 0 0 no-repeat;
+            background-size: 100%;
+            text-align: center;
+            line-height: 0.65rem;
+           }
+        }
+    };
+    .show{
+        display:block;
+    }
+}

@@ -1,0 +1,275 @@
+@charset "UTF-8";
+html {
+  font-size: 100px; }
+
+body {
+  font-size: 16px; }
+
+@media screen and (min-width: 320px) {
+  html {
+    font-size: 42.66667px; } }
+
+@media screen and (min-width: 360px) {
+  html {
+    font-size: 48px; } }
+
+@media screen and (min-width: 375px) {
+  html {
+    font-size: 50px; } }
+
+@media screen and (min-width: 412px) {
+  html {
+    font-size: 54.93333px; } }
+
+@media screen and (min-width: 414px) {
+  html {
+    font-size: 55.2px; } }
+
+body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
+  margin: 0;
+  padding: 0; }
+
+ul, li, ol, dt, dd, dl {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+body {
+  background: #fff; }
+
+* {
+  font-family: "Microsoft YaHei",sans-serif;
+  box-sizing: border-box; }
+
+/*图片路径*/
+/*调试块*/
+/*上下居中*/
+/*左右居中*/
+/*居中*/
+/*建盒子*/
+/*正方形*/
+/*圆*/
+/*图片居中*/
+h1 {
+  font-size: 28px; }
+
+h2 {
+  font-size: 26px; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 22px; }
+
+h3 {
+  font-size: 20px; }
+
+p, b, i, div, span, input, a {
+  font-size: 16px; }
+
+/*列表右边加效果*/
+/*列表右边加效果*/
+/*header*/
+#bookMark-header {
+  width: 100%;
+  height: 1rem;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100; }
+
+/*header*/
+#bookMarks {
+  width: 7.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: auto;
+  margin-top: 1rem;
+  /*笔记条数*/
+  /*笔记条数*/
+  /*我的书签*/
+  /*书签列表*/
+  /*选中效果*/
+  /*选中效果*/
+  /*书签列表*/
+  /*添加书签*/
+  /*添加书签*/
+  /**/
+  /*我的书签*/ }
+  #bookMarks .note-count {
+    width: 100%;
+    height: 0.48rem;
+    background-color: #e5e5e5;
+    display: none; }
+    #bookMarks .note-count a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #a8a8a8;
+      font-size: 0.20rem;
+      line-height: 0.48rem;
+      text-align: center; }
+  #bookMarks .bookmark-box {
+    width: 100%;
+    height: auto;
+    float: left; }
+  #bookMarks .bookmark-list {
+    width: 100%;
+    height: 1.14rem;
+    background-color: #fff;
+    margin-bottom: 0.10rem;
+    position: relative; }
+  #bookMarks .selected {
+    width: 100%;
+    height: 1.14rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../../../imgs/e7/f3_03.png");
+    background-repeat: no-repeat;
+    background-size: 7.49rem 1.20rem;
+    background-position: 0rem 0rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 1px solid #29dcbc;
+    border-right: 1px solid #29dcbc;
+    border-top: 1px solid #29dcbc;
+    border-bottom: 2px solid #29dcbc;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  #bookMarks .delete1 {
+    width: 0.95rem;
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    bottom: 0; }
+    #bookMarks .delete1 .delete-btn {
+      width: 0.31rem;
+      height: 0.31rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-image: url("../../../imgs/e7/e7_07.png");
+      background-repeat: no-repeat;
+      background-size: 0.31rem 0.31rem;
+      background-position: center center; }
+  #bookMarks .bookmark-listL {
+    width: 0.98rem;
+    height: 0.97rem;
+    float: left; }
+    #bookMarks .bookmark-listL .img1 {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../imgs/e3/c4_54.png");
+      background-repeat: no-repeat;
+      background-size: 0.68rem 0.63rem;
+      background-position: 0.06rem 0.09rem; }
+  #bookMarks .bookmark-listR {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    width: 6.52rem;
+    height: 0.97rem; }
+    #bookMarks .bookmark-listR .titleB {
+      width: 100%;
+      height: 0.35rem;
+      color: #151c2b;
+      font-size: 0.24rem;
+      line-height: 0.35rem;
+      text-align: left; }
+    #bookMarks .bookmark-listR .abstract2 {
+      width: 100%;
+      height: 0.29rem;
+      color: #505050;
+      font-size: 0.18rem;
+      line-height: 0.29rem;
+      text-align: left;
+      letter-spacing: -0.01rem;
+      margin-bottom: 0.07rem; }
+    #bookMarks .bookmark-listR .recode {
+      width: 100%;
+      height: 0.33rem;
+      padding-right: 0.46rem; }
+      #bookMarks .bookmark-listR .recode .recodeL, #bookMarks .bookmark-listR .recode .recodeR {
+        display: block;
+        padding-left: 0.33rem;
+        float: left;
+        text-align: right;
+        font-family: tahoma;
+        font-weight: normal;
+        color: #7f7f7f;
+        font-size: 0.16rem;
+        line-height: 0.26rem;
+        position: relative; }
+        #bookMarks .bookmark-listR .recode .recodeL i, #bookMarks .bookmark-listR .recode .recodeR i {
+          display: block;
+          position: absolute;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 0.08rem;
+          width: 0.16rem;
+          height: 0.16rem;
+          background-image: url("../../../imgs/e7/e7_21.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 0.16rem 0.16rem; }
+      #bookMarks .bookmark-listR .recode .recodeR {
+        float: right; }
+        #bookMarks .bookmark-listR .recode .recodeR i {
+          width: 0.25rem;
+          height: 0.14rem;
+          left: 0.01rem;
+          background-image: url("../../../imgs/e7/e7_4.png");
+          background-size: 0.25rem 0.14rem; }
+  #bookMarks .bookmark-listBom {
+    width: 100%;
+    height: 0.17rem;
+    overflow: hidden;
+    line-height: 0.04rem;
+    text-align: center;
+    font-size: 0.12rem;
+    color: #999; }
+  #bookMarks .bookmark-add {
+    width: 100%;
+    height: 1.32rem;
+    background-color: #fff; }
+  #bookMarks .add-box1 {
+    width: 6.89rem;
+    height: 0.85rem;
+    margin: 0.24rem 0.24rem 0.36rem 0.23rem;
+    box-shadow: 0 0 0.1rem rgba(42, 126, 255, 0.13);
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.4rem;
+    text-align: center;
+    line-height: 0.85rem; }
+  #bookMarks .add-btn1 {
+    display: inline-block;
+    font-size: 0.24rem;
+    color: #2d2d2d;
+    position: relative; }
+    #bookMarks .add-btn1 span {
+      width: 0.36rem;
+      height: 0.36rem;
+      display: block;
+      position: absolute;
+      left: -0.47rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-image: url("../../../imgs/e3/e3_03.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 0.36rem 0.36rem; }
