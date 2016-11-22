@@ -246,7 +246,7 @@
              width: 100%;
          }
      }
-     .bookChange:nth-of-type(2){
+     .active{
          background-image: url($img-path1+'c3/c1_xz.png') ;
          border-left: 1px solid #717171;
          border-right: 1px solid #717171;
@@ -345,12 +345,12 @@
 //      line-height: 100%;
         h3{
             font-size: 0.34rem;
-            margin-top: 0.03rem;
+            margin-top: 0.1rem;
 //          margin-bottom: 0.05rem;
         }
         p{
             font-size: 0.12rem;
-            margin-top: 0.1rem;
+            margin-top: 0.15rem;
             color: rgba(255,255,255,0.6);
             transform: scale(0.8);
         }
