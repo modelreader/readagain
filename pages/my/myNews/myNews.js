@@ -1,5 +1,6 @@
-app.controller('myNewsCtrl',['$scope',function($scope){
-	
+app.controller('myNewsCtrl',['$scope','$routeParams','back',function($scope,$routeParams,back){
+	var id=parseInt($routeParams.id);
+	$scope.ss=back.getById(id);
 }])
 app.directive('ngN',[function(){
 	return {
