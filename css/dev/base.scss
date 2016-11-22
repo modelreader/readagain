@@ -32,7 +32,7 @@ body{
 }
 /*图片路径*/
 $img-path:'../../../imgs/';
-
+$img-path1:'../../imgs/';
 /*调试块*/
 @mixin box{
 	border:1px solid #000;
