@@ -135,7 +135,7 @@ p, b, i, div, span, input, a {
   width: 0.42rem;
   height: 0.42rem;
   border-radius: 50%;
-  background: url("../imgs/a1/a_03.jpg");
+  background: url("../../../imgs/a1/a_03.jpg");
   background-size: 0.45rem 0.45rem;
 }
 
@@ -211,7 +211,7 @@ p, b, i, div, span, input, a {
   bottom: 0.20rem;
   width: 0.44rem;
   height: 0.44rem;
-  background: url("../imgs/a1/a_07.jpg");
+  background: url("../../../imgs/a1/a_07.jpg");
   background-size: 0.44rem 0.44rem;
   z-index: 3;
 }
@@ -221,17 +221,17 @@ p, b, i, div, span, input, a {
 }
 
 #register #logincon .mima .suo {
-  background: url("../imgs/a2/a_14.png");
+  background: url("../../../imgs/a2/a_14.png");
   background-size: 0.44rem 0.44rem;
 }
 
 #register #logincon .zaimima .suo {
-  background: url("../imgs/a2/a_14.png");
+  background: url("../../../imgs/a2/a_14.png");
   background-size: 0.44rem 0.44rem;
 }
 
 #register #logincon .phone .sj {
-  background: url("../imgs/a2/b_07.png");
+  background: url("../../../imgs/a2/b_07.png");
   background-size: 0.44rem 0.44rem;
 }
 
@@ -297,7 +297,7 @@ p, b, i, div, span, input, a {
   position: absolute;
   left: 0.3rem;
   top: 0.13rem;
-  background: url("../imgs/a1/a_18.jpg");
+  background: url("../../../imgs/a1/a_18.jpg");
   background-size: 0.25rem 0.25rem;
   width: 0.25rem;
   height: 0.25rem;
@@ -316,7 +316,7 @@ p, b, i, div, span, input, a {
   position: absolute;
   left: 0.9rem;
   top: 0.13rem;
-  background: url("../imgs/a1/a_20.jpg");
+  background: url("../../../imgs/a1/a_20.jpg");
   background-size: 0.25rem 0.25rem;
   width: 0.25rem;
   height: 0.25rem;
@@ -326,7 +326,7 @@ p, b, i, div, span, input, a {
   width: 5.7rem;
   height: 0.7rem;
   text-align: center;
-  background: url("../imgs/a1/a_25.jpg");
+  background: url("../../../imgs/a1/a_25.jpg");
   background-size: 5.7rem 0.7rem;
   color: #fff;
   padding: 0;
