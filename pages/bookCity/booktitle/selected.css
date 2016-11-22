@@ -1,63 +1,46 @@
 @charset "UTF-8";
 html {
-  font-size: 100px;
-}
+  font-size: 100px; }
 
 body {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 @media screen and (min-width: 320px) {
   html {
-    font-size: 42.66667px;
-  }
-}
+    font-size: 42.66667px; } }
 
 @media screen and (min-width: 360px) {
   html {
-    font-size: 48px;
-  }
-}
+    font-size: 48px; } }
 
 @media screen and (min-width: 375px) {
   html {
-    font-size: 50px;
-  }
-}
+    font-size: 50px; } }
 
 @media screen and (min-width: 412px) {
   html {
-    font-size: 54.93333px;
-  }
-}
+    font-size: 54.93333px; } }
 
 @media screen and (min-width: 414px) {
   html {
-    font-size: 55.2px;
-  }
-}
+    font-size: 55.2px; } }
 
 body, h1, h2, h3, h4, h5, h6, p, pre, ol, ul, li, form, input, textarea, dl, dt, dd, span {
   margin: 0;
-  padding: 0;
-}
+  padding: 0; }
 
 ul, li, ol, dt, dd, dl {
-  list-style: none;
-}
+  list-style: none; }
 
 a {
-  text-decoration: none;
-}
+  text-decoration: none; }
 
 body {
-  background: #fff;
-}
+  background: #fff; }
 
 * {
   font-family: "Microsoft YaHei",sans-serif;
-  box-sizing: border-box;
-}
+  box-sizing: border-box; }
 
 /*图片路径*/
 /*调试块*/
@@ -69,34 +52,27 @@ body {
 /*圆*/
 /*图片居中*/
 h1 {
-  font-size: 28px;
-}
+  font-size: 28px; }
 
 h2 {
-  font-size: 26px;
-}
+  font-size: 26px; }
 
 h3 {
-  font-size: 24px;
-}
+  font-size: 24px; }
 
 h4 {
-  font-size: 22px;
-}
+  font-size: 22px; }
 
 h3 {
-  font-size: 20px;
-}
+  font-size: 20px; }
 
 p, b, i, div, span, input, a {
-  font-size: 16px;
-}
+  font-size: 16px; }
 
 @font-face {
   font-family: 'headerfont';
   src: url("../fonts/headerfont/iconfont.eot");
-  src: url("../fonts/headerfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/headerfont/iconfont.woff") format("woff"), url("../fonts/headerfont/iconfont.ttf") format("truetype"), url("../fonts/headerfont/iconfont.svg#iconfont") format("svg");
-}
+  src: url("../fonts/headerfont/iconfont.eot?#iefix") format("embedded-opentype"), url("../fonts/headerfont/iconfont.woff") format("woff"), url("../fonts/headerfont/iconfont.ttf") format("truetype"), url("../fonts/headerfont/iconfont.svg#iconfont") format("svg"); }
 
 .BookCity-header {
   width: 100%;
@@ -106,220 +82,162 @@ p, b, i, div, span, input, a {
   top: 0;
   z-index: 99;
   background: #29a6dc;
-  padding-top: 0.5rem;
-}
-
-.BookCity-header .BookCity-list {
-  width: 5.71rem;
-  height: 0.84rem;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  background: url("../../../imgs/c1/c1_03.png") no-repeat 0 0;
-  background-size: 100%;
-  margin-top: 0.5rem;
-}
-
-.BookCity-header .back-circle-r {
-  width: 0.44rem;
-  height: 0.44rem;
-  border-radius: 50%;
-  border: 0.02rem solid #076cbe;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-  background: #fff;
-  right: 0.25rem;
-  font-family: 'headerfont';
-  line-height: 0.38rem;
-  text-align: center;
-  font-size: 0.16rem;
-  margin-top: 0.7rem;
-  color: #73c4e7;
-}
-
-.BookCity-header .classify {
-  width: 1.65rem;
-  height: 100%;
-  float: left;
-  text-align: center;
-  color: #fff;
-}
-
-.BookCity-header .classify h3 {
-  margin-top: 0.15rem;
-  font-size: 0.2rem;
-}
-
-.BookCity-header .classify p {
-  font-size: 0.12rem;
-  margin-top: -.03rem;
-  color: rgba(255, 255, 255, 0.6);
-  transform: scale(0.8);
-}
-
-.BookCity-header .classify:nth-of-type(1) {
-  margin-left: 0.1rem;
-}
-
-.BookCity-header .classify:nth-of-type(2) {
-  margin-left: 0.35rem;
-}
-
-.BookCity-header .classify:nth-of-type(3) {
-  margin-left: 0.2rem;
-}
-
-.BookCity-header .BookCity-header-title {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  margin: auto;
-  min-width: 3rem;
-  height: 100%;
-  text-align: center;
-  margin: auto;
-  color: #fff;
-  background-image: url("../../../imgs/header/h_03.png");
-  background-position: center 0.55rem;
-  background-repeat: no-repeat;
-}
-
-.BookCity-header .BookCity-header-title h3 {
-  font-size: 0.34rem;
-  margin-top: 0.03rem;
-}
-
-.BookCity-header .BookCity-header-title p {
-  font-size: 0.12rem;
-  margin-top: 0.1rem;
-  color: rgba(255, 255, 255, 0.6);
-  transform: scale(0.8);
-}
+  padding-top: 0.5rem; }
+  .BookCity-header .BookCity-list {
+    width: 5.71rem;
+    height: 0.84rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    background: url("../../../imgs/c1/c1_03.png") no-repeat 0 0;
+    background-size: 100%;
+    margin-top: 0.5rem; }
+  .BookCity-header .back-circle-r {
+    width: 0.44rem;
+    height: 0.44rem;
+    border-radius: 50%;
+    border: 0.02rem solid #076cbe;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    margin: auto;
+    background: #fff;
+    right: 0.25rem;
+    font-family: 'headerfont';
+    line-height: 0.38rem;
+    text-align: center;
+    font-size: 0.16rem;
+    margin-top: 0.7rem;
+    color: #73c4e7; }
+  .BookCity-header .classify {
+    width: 1.65rem;
+    height: 100%;
+    float: left;
+    text-align: center;
+    color: #fff; }
+    .BookCity-header .classify h3 {
+      margin-top: 0.15rem;
+      font-size: 0.2rem; }
+    .BookCity-header .classify p {
+      font-size: 0.12rem;
+      margin-top: -.03rem;
+      color: rgba(255, 255, 255, 0.6);
+      transform: scale(0.8); }
+  .BookCity-header .classify:nth-of-type(1) {
+    margin-left: 0.1rem; }
+  .BookCity-header .classify:nth-of-type(2) {
+    margin-left: 0.35rem; }
+  .BookCity-header .classify:nth-of-type(3) {
+    margin-left: 0.2rem; }
+  .BookCity-header .BookCity-header-title {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    min-width: 3rem;
+    height: 100%;
+    text-align: center;
+    margin: auto;
+    color: #fff;
+    background-image: url("../../../imgs/header/h_03.png");
+    background-position: center 0.55rem;
+    background-repeat: no-repeat; }
+    .BookCity-header .BookCity-header-title h3 {
+      font-size: 0.34rem;
+      margin-top: 0.03rem; }
+    .BookCity-header .BookCity-header-title p {
+      font-size: 0.12rem;
+      margin-top: 0.1rem;
+      color: rgba(255, 255, 255, 0.6);
+      transform: scale(0.8); }
 
 #selected {
   position: absolute;
   left: 0;
   top: 0;
-  display: none;
-}
-
-#selected .banner {
-  width: 100%;
-  height: 5.3rem;
-  margin-top: 1.5rem;
-  overflow: hidden;
-}
-
-#selected .banner .imgBox {
-  width: 100%;
-  height: 5rem;
-}
-
-#selected .banner .imgBox img {
-  width: 100%;
-  height: 100%;
-}
-
-#selected .banner ul {
-  width: auto;
-  height: 0.3rem;
-  padding-left: 3rem;
-}
-
-#selected .banner ul li {
-  width: 0.1rem;
-  height: 0.1rem;
-  border-radius: 50%;
-  border: 1px solid #29A6DC;
-  margin-left: 0.2rem;
-  margin-top: 0.15rem;
-  float: left;
-}
-
-#selected .banner ul .blue {
-  background: #29A6DC;
-}
-
-#selected .new {
-  width: 100%;
-  height: auto;
-  margin-bottom: 9rem;
-}
-
-#selected .new .newTitle {
-  height: 1rem;
-  padding-left: 0.4rem;
-  position: relative;
-}
-
-#selected .new .newTitle .shangjia {
-  width: 1.95rem;
-  height: 0.53rem;
-  position: absolute;
-  left: 0.4rem;
-  top: 0.2rem;
-  background: url("../../../imgs/c1/c1_11.png");
-  background-size: 1.95rem 0.53rem;
-}
-
-#selected .new .bookList {
-  width: 100%;
-  height: auto;
-}
-
-#selected .new .bookList li {
-  width: 1.8rem;
-  height: auto;
-  float: left;
-  margin-left: 0.55rem;
-  margin-top: 0.3rem;
-}
-
-#selected .new .bookList li .face {
-  width: 1.8rem;
-  height: 2.6rem;
-  position: relative;
-  float: left;
-}
-
-#selected .new .bookList li .face i {
-  width: 1.8rem;
-  height: 2.6rem;
-  position: absolute;
-  left: 0;
-  top: 0;
-}
-
-#selected .new .bookList li .face .diyu {
-  background: url("../../../imgs/c1/c1_15.png");
-  background-size: 1.8rem 2.6rem;
-}
-
-#selected .new .bookList li .face .bali {
-  background: url("../../../imgs/c1/c1_19.png");
-  background-size: 1.8rem 2.6rem;
-}
-
-#selected .new .bookList li p {
-  padding-left: 0.1rem;
-  font-size: 12px;
-  color: #666;
-  float: left;
-}
-
-#selected .new .bookList li span {
-  padding-left: 0.1rem;
-  color: #999;
-  float: left;
-  font-size: 12px;
-}
+  display: none; }
+  #selected .banner {
+    width: 100%;
+    height: 5.3rem;
+    margin-top: 1.5rem;
+    overflow: hidden; }
+    #selected .banner .imgBox {
+      width: 100%;
+      height: 5rem; }
+      #selected .banner .imgBox img {
+        width: 100%;
+        height: 100%; }
+    #selected .banner ul {
+      width: auto;
+      height: 0.3rem;
+      padding-left: 3rem; }
+      #selected .banner ul li {
+        width: 0.1rem;
+        height: 0.1rem;
+        border-radius: 50%;
+        border: 1px solid #29A6DC;
+        margin-left: 0.2rem;
+        margin-top: 0.15rem;
+        float: left; }
+      #selected .banner ul .blue {
+        background: #29A6DC; }
+  #selected .new {
+    width: 100%;
+    height: auto;
+    margin-bottom: 9rem; }
+    #selected .new .newTitle {
+      height: 1rem;
+      padding-left: 0.4rem;
+      position: relative; }
+      #selected .new .newTitle .shangjia {
+        width: 1.95rem;
+        height: 0.53rem;
+        position: absolute;
+        left: 0.4rem;
+        top: 0.2rem;
+        background: url("../../../imgs/c1/c1_11.png");
+        background-size: 1.95rem 0.53rem; }
+    #selected .new .bookList {
+      width: 100%;
+      height: auto; }
+      #selected .new .bookList li {
+        width: 1.8rem;
+        height: auto;
+        float: left;
+        margin-left: 0.55rem;
+        margin-top: 0.3rem; }
+        #selected .new .bookList li .face {
+          width: 1.8rem;
+          height: 2.6rem;
+          position: relative;
+          float: left; }
+          #selected .new .bookList li .face i {
+            width: 1.8rem;
+            height: 2.6rem;
+            position: absolute;
+            left: 0;
+            top: 0; }
+          #selected .new .bookList li .face .diyu {
+            background: url("../../../imgs/c1/c1_15.png");
+            background-size: 1.8rem 2.6rem; }
+          #selected .new .bookList li .face .bali {
+            background: url("../../../imgs/c1/c1_19.png");
+            background-size: 1.8rem 2.6rem; }
+        #selected .new .bookList li p {
+          padding-left: 0.1rem;
+          font-size: 12px;
+          color: #666;
+          float: left; }
+        #selected .new .bookList li span {
+          padding-left: 0.1rem;
+          color: #999;
+          float: left;
+          font-size: 12px; }
 
 #list {
   width: 100%;
@@ -330,165 +248,124 @@ p, b, i, div, span, input, a {
   position: absolute;
   left: 0;
   top: 0;
-  display: none;
-}
-
-#list ul {
-  width: 100%;
-  height: 100%;
-}
-
-#list ul li {
-  width: 100%;
-  height: 2.5rem;
-  margin-bottom: 0.3rem;
-  background-image: url("../../../imgs/c2/c2_03.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  position: relative;
-}
+  display: none; }
+  #list ul {
+    width: 100%;
+    height: 100%; }
+    #list ul li a {
+      display: block;
+      width: 100%;
+      height: 2.5rem;
+      margin-bottom: 0.3rem;
+      background-image: url("../../../imgs/c2/c2_03.png");
+      background-repeat: no-repeat;
+      background-size: cover;
+      position: relative; }
 
 #class {
   position: absolute;
   left: 0;
   top: 0;
-  display: none;
-}
-
-#class #intel1 {
-  margin-top: 1.5rem;
-}
-
-#class #intel2 {
-  margin-bottom: 0.7rem;
-}
-
-#class .intel {
-  width: 100%;
-  height: auto;
-}
-
-#class .intel .intel-t {
-  width: 100%;
-  height: 0.8rem;
-  background: #ACE1F8;
-  box-shadow: 0 0 15px #666;
-  position: relative;
-}
-
-#class .intel .intel-t i {
-  width: 0.4rem;
-  height: 0.4rem;
-  position: absolute;
-  left: 0.4rem;
-  top: 0.2rem;
-  background: url("../../../imgs/c3/c3_03.png");
-  background-size: 0.4rem 0.4rem;
-}
-
-#class .intel .intel-t p {
-  color: #666;
-  font-size: 13px;
-  position: absolute;
-  left: 0.9rem;
-  top: 0.2rem;
-}
-
-#class .intel .zhuan {
-  width: 100%;
-  height: auto;
-  background: #f2f2f2;
-  position: relative;
-}
-
-#class .intel .zhuan .zhuan-t {
-  width: 100%;
-  height: 1rem;
-  padding: 0 7%;
-  color: #51B3E0;
-  line-height: 1rem;
-  font-size: 18px;
-  border-bottom: 1px #999 dashed;
-}
-
-#class .intel .zhuan .s1 {
-  width: 100%;
-  height: 0.3rem;
-  position: absolute;
-  left: 0;
-  top: 2.7rem;
-}
-
-#class .intel .zhuan .s2 {
-  width: 100%;
-  height: 0.3rem;
-  position: absolute;
-  left: 0;
-  top: 4.4rem;
-}
-
-#class .intel .zhuan .girl {
-  width: 100%;
-  height: 4rem;
-  padding-left: 0.5rem;
-}
-
-#class .intel .zhuan .girl li {
-  float: left;
-  width: 2.1rem;
-  height: 1.1rem;
-  margin-right: 0.15rem;
-  margin-top: 0.6rem;
-  color: #F6FBFE;
-  line-height: 1.1rem;
-  text-align: center;
-  font-size: 18px;
-}
-
-#class .intel .zhuan .girl li:nth-last-of-type(2n) {
-  background-image: url("../../../imgs/c3/c3_07.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#class .intel .zhuan .girl li:nth-last-of-type(2n+1) {
-  background-image: url("../../../imgs/c3/c3_09.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#class .intel .zhuan .boy {
-  width: 100%;
-  height: 6rem;
-  padding-left: 0.5rem;
-}
-
-#class .intel .zhuan .boy li {
-  float: left;
-  width: 2.1rem;
-  height: 1.1rem;
-  background-image: url(../imgs/imgle/bg1.png);
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-  margin-right: 0.15rem;
-  margin-top: 0.6rem;
-  color: #F6FBFE;
-  line-height: 1.1rem;
-  text-align: center;
-  font-size: 18px;
-}
-
-#class .intel .zhuan .boy li:nth-last-of-type(2n) {
-  background-image: url("../../../imgs/c3/c3_07.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
-
-#class .intel .zhuan .boy li:nth-last-of-type(2n+1) {
-  background-image: url("../../../imgs/c3/c3_09.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%;
-}
+  display: none; }
+  #class #intel1 {
+    margin-top: 1.5rem; }
+  #class #intel2 {
+    margin-bottom: 0.7rem; }
+  #class .intel {
+    width: 100%;
+    height: auto; }
+    #class .intel .intel-t {
+      width: 100%;
+      height: 0.8rem;
+      background: #ACE1F8;
+      box-shadow: 0 0 15px #666;
+      position: relative; }
+      #class .intel .intel-t i {
+        width: 0.4rem;
+        height: 0.4rem;
+        position: absolute;
+        left: 0.4rem;
+        top: 0.2rem;
+        background: url("../../../imgs/c3/c3_03.png");
+        background-size: 0.4rem 0.4rem; }
+      #class .intel .intel-t p {
+        color: #666;
+        font-size: 13px;
+        position: absolute;
+        left: 0.9rem;
+        top: 0.2rem; }
+    #class .intel .zhuan {
+      width: 100%;
+      height: auto;
+      background: #f2f2f2;
+      position: relative; }
+      #class .intel .zhuan .zhuan-t {
+        width: 100%;
+        height: 1rem;
+        padding: 0 7%;
+        color: #51B3E0;
+        line-height: 1rem;
+        font-size: 18px;
+        border-bottom: 1px #999 dashed; }
+      #class .intel .zhuan .s1 {
+        width: 100%;
+        height: 0.3rem;
+        position: absolute;
+        left: 0;
+        top: 2.7rem; }
+      #class .intel .zhuan .s2 {
+        width: 100%;
+        height: 0.3rem;
+        position: absolute;
+        left: 0;
+        top: 4.4rem; }
+      #class .intel .zhuan .girl {
+        width: 100%;
+        height: 4rem;
+        padding-left: 0.5rem; }
+        #class .intel .zhuan .girl li {
+          float: left;
+          width: 2.1rem;
+          height: 1.1rem;
+          margin-right: 0.15rem;
+          margin-top: 0.6rem;
+          color: #F6FBFE;
+          line-height: 1.1rem;
+          text-align: center;
+          font-size: 18px; }
+        #class .intel .zhuan .girl li:nth-last-of-type(2n) {
+          background-image: url("../../../imgs/c3/c3_07.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%; }
+        #class .intel .zhuan .girl li:nth-last-of-type(2n+1) {
+          background-image: url("../../../imgs/c3/c3_09.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%; }
+      #class .intel .zhuan .boy {
+        width: 100%;
+        height: 6rem;
+        padding-left: 0.5rem; }
+        #class .intel .zhuan .boy li {
+          float: left;
+          width: 2.1rem;
+          height: 1.1rem;
+          background-image: url(../imgs/imgle/bg1.png);
+          background-repeat: no-repeat;
+          background-size: 100% 100%;
+          margin-right: 0.15rem;
+          margin-top: 0.6rem;
+          color: #F6FBFE;
+          line-height: 1.1rem;
+          text-align: center;
+          font-size: 18px; }
+        #class .intel .zhuan .boy li:nth-last-of-type(2n) {
+          background-image: url("../../../imgs/c3/c3_07.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%; }
+        #class .intel .zhuan .boy li:nth-last-of-type(2n+1) {
+          background-image: url("../../../imgs/c3/c3_09.png");
+          background-repeat: no-repeat;
+          background-size: 100% 100%; }
 
 .BookCity-footer {
   width: 100%;
@@ -497,40 +374,30 @@ p, b, i, div, span, input, a {
   left: 0;
   bottom: 0;
   z-index: 99;
-  background: #151c2b;
-}
-
-.BookCity-footer .bookChange {
-  width: 33.333%;
-  height: 100%;
-  float: left;
-  background-repeat: no-repeat;
-  background-position: center center;
-  background-size: 100%;
-  color: #646567;
-}
-
-.BookCity-footer .bookChange p {
-  font-size: 0.44rem;
-  text-align: center;
-  font-family: "headerfont";
-  margin-top: 0.05rem;
-}
-
-.BookCity-footer .bookChange span {
-  font-size: 0.24rem;
-  text-align: center;
-  display: block;
-  width: 100%;
-}
-
-.BookCity-footer .bookChange:nth-of-type(1) {
-  background-image: url("../../../imgs/c3/c1_xz.png");
-  border-left: 1px solid #717171;
-  border-right: 1px solid #717171;
-}
+  background: #151c2b; }
+  .BookCity-footer .bookChange {
+    width: 33.333%;
+    height: 100%;
+    float: left;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 100%;
+    color: #646567; }
+    .BookCity-footer .bookChange p {
+      font-size: 0.44rem;
+      text-align: center;
+      font-family: "headerfont";
+      margin-top: 0.05rem; }
+    .BookCity-footer .bookChange span {
+      font-size: 0.24rem;
+      text-align: center;
+      display: block;
+      width: 100%; }
+  .BookCity-footer .bookChange:nth-of-type(1) {
+    background-image: url("../../../imgs/c3/c1_xz.png");
+    border-left: 1px solid #717171;
+    border-right: 1px solid #717171; }
 
 .back {
   background: url("../../../imgs/c1/c_03.png") no-repeat center center;
-  background-size: 100%;
-}
+  background-size: 100%; }

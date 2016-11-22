@@ -191,10 +191,10 @@ p, b, i, div, span, input, a {
     background-repeat: no-repeat; }
     .bookcase-header .bookcase-header-title h3 {
       font-size: 0.3rem;
-      margin-top: 0.03rem; }
+      margin-top: 0.1rem; }
     .bookcase-header .bookcase-header-title h5 {
       font-size: 0.14rem;
-      margin-top: 0.1rem;
+      margin-top: 0.15rem;
       color: rgba(255, 255, 255, 0.6);
       transform: scale(0.8); }
 
@@ -289,10 +289,10 @@ p, b, i, div, span, input, a {
     background-repeat: no-repeat; }
     .BookCity-header .BookCity-header-title h3 {
       font-size: 0.34rem;
-      margin-top: 0.03rem; }
+      margin-top: 0.1rem; }
     .BookCity-header .BookCity-header-title p {
       font-size: 0.12rem;
-      margin-top: 0.1rem;
+      margin-top: 0.15rem;
       color: rgba(255, 255, 255, 0.6);
       transform: scale(0.8); }
 
@@ -318,7 +318,7 @@ p, b, i, div, span, input, a {
       text-align: center;
       display: block;
       width: 100%; }
-  .BookCity-footer .bookChange:nth-of-type(2) {
+  .BookCity-footer .active {
     background-image: url("../../imgs/c3/c1_xz.png");
     border-left: 1px solid #717171;
     border-right: 1px solid #717171; }
@@ -345,10 +345,10 @@ p, b, i, div, span, input, a {
     background-repeat: no-repeat; }
     .mine-header .mine-header-title h3 {
       font-size: 0.34rem;
-      margin-top: 0.03rem; }
+      margin-top: 0.1rem; }
     .mine-header .mine-header-title p {
       font-size: 0.12rem;
-      margin-top: 0.1rem;
+      margin-top: 0.15rem;
       color: rgba(255, 255, 255, 0.6);
       transform: scale(0.8); }
 
@@ -414,10 +414,10 @@ p, b, i, div, span, input, a {
     background-repeat: no-repeat; }
     .bookPage-header .mine-header-title h3 {
       font-size: 0.34rem;
-      margin-top: 0.03rem; }
+      margin-top: 0.1rem; }
     .bookPage-header .mine-header-title p {
       font-size: 0.12rem;
-      margin-top: 0.1rem;
+      margin-top: 0.15rem;
       color: rgba(255, 255, 255, 0.6);
       transform: scale(0.8); }
 
@@ -515,9 +515,9 @@ p, b, i, div, span, input, a {
     background-repeat: no-repeat; }
     .reading-header .reading-header-title h3 {
       font-size: 0.34rem;
-      margin-top: 0.03rem; }
+      margin-top: 0.1rem; }
     .reading-header .reading-header-title p {
       font-size: 0.12rem;
-      margin-top: 0.1rem;
+      margin-top: 0.15rem;
       color: rgba(255, 255, 255, 0.6);
       transform: scale(0.8); }

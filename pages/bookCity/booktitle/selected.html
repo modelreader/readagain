@@ -1,33 +1,24 @@
-<!DOCTYPE html>
-<html>
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width">
-		<link rel="stylesheet" type="text/css" href="selected.css"/>
-		<!--<link rel="stylesheet" type="text/css" href="class.css"/>
-		<link rel="stylesheet" type="text/css" href="list.css"/>-->
-		<script src="../../../js/jquery.min.js"></script>
-		<script src="selected.js"></script>
-<!--		<link rel="stylesheet" type="text/css" href="css/header.css"/>-->
-		<title></title>
-	</head>
-	<body>
+
 		<div class="BookCity-header">
-			<div class="back-circle-r">&#xe674;</div>
-			<div class="BookCity-list">
-				<div class="classify back" id="jingx">
-					<h3>精选</h3>
-					<p>SELECTED</p>
+			<!--<div class="back-circle-r">&#xe674;</div>-->
+			<a href="#/searchWord" class="back-circle-r">&#xe674;</a>
+			<!--<div class="BookCity-list">-->
+				<div ng-xcase>
+					<div class="classify back" id="jingx">
+						<h3>精选</h3>
+						<p>SELECTED</p>
+					</div>
+					<div class="classify" id="bangd">
+						<h3>榜单</h3>
+						<p>LIST</p>
+					</div>
+					<div class="classify" id="fengl">
+						<h3>分类</h3>
+						<p>CLASSIFY</p>
+					</div>
 				</div>
-				<div class="classify" id="bangd">
-					<h3>榜单</h3>
-					<p>LIST</p>
-				</div>
-				<div class="classify" id="fengl">
-					<h3>分类</h3>
-					<p>CLASSIFY</p>
-				</div>
-			</div>
+				
+			<!--</div>-->
 		</div>
 			
 		<div id="selected" class="dis">
@@ -98,10 +89,10 @@
 		<div id="list" class="dis">
 			
 				<ul>
-					<li></li>
-					<li></li>
-					<li></li>
-					<li></li>
+					<li><a href="#/titleSelection"></a></li>
+					<li><a href="#/titleSelection"></a></li>
+					<li><a href="#/titleSelection"></a></li>
+					<li><a href="#/titleSelection"></a></li>
 				</ul>
 			
 		</div>
@@ -118,8 +109,10 @@
 					</div>
 					<ul class="girl">
 						<li>
-							仙侠
-							<i class="xianjian"></i>
+							<a href="#/recommend">
+								仙侠
+								<i class="xianjian"></i>
+							</a>
 						</li>
 						
 						<li class="qian">
@@ -231,6 +224,4 @@
 				<span>我的</span>
 			</div>
 		</div>	
-		
-	</body>
-</html>
+
