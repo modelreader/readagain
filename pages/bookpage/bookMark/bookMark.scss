@@ -87,14 +87,17 @@ $leftX:0.54rem;
         border-top:1px solid #29dcbc;
         border-bottom:2px solid #29dcbc;
         @include box-sizing;
-//      display: none;
+        display: none;
+        z-index: 10;
     }
     .delete1{
         width: 0.95rem;
         position: absolute;
+        z-index: 120;
         right: 0;
         top: 0rem;
         bottom: 0;
+        display: none;
         .delete-btn{
             @include cube(0.31rem);
             @include center;
@@ -166,6 +169,9 @@ $leftX:0.54rem;
 //                  box-shadow: 0 0 0.1rem rgba(42,126,255,0.13);
                     background-size: 0.16rem 0.16rem;
                 }
+                .bkl{
+                    background-image: $bI1;
+                }
                 
             }
             .recodeR{
@@ -175,6 +181,9 @@ $leftX:0.54rem;
                     left: 0.01rem;
                     background-image: $bIX2;
                     background-size: 0.25rem 0.14rem;
+                }
+                .bk2{
+                    background-image: $bI2;
                 }
                 
             }

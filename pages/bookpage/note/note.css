@@ -69,6 +69,7 @@ h3 {
 p, b, i, div, span, input, a {
   font-size: 16px; }
 
+/*图片路径*/
 /*header*/
 #note-header {
   width: 100%;
@@ -157,7 +158,8 @@ p, b, i, div, span, input, a {
       margin-left: 0.02rem;
       margin-top: 0.11rem;
       padding: 0.12rem 1.12rem 0.13rem 0.52rem;
-      position: relative; }
+      position: relative;
+      z-index: 9999; }
       #note .note-listR .notes .p1, #note .note-listR .notes .p2 {
         height: 0.30rem;
         font-size: 0.20rem;
@@ -171,11 +173,13 @@ p, b, i, div, span, input, a {
         top: 0.19rem;
         width: 0.21rem;
         height: 0.21rem;
-        background-image: url("../../../imgs/e8/e8_07.png");
+        background-image: url("../../../imgs/e8/e8_07.png") !important;
         background-repeat: no-repeat;
         background-size: 0.21rem 0.21rem;
         background-position: center center; }
-    #note .note-listR div.notes1 {
+      #note .note-listR .notes .bk3 {
+        background-image: url("../../../imgs/e8/e8_1.png"); }
+    #note .note-listR .notes1 {
       border: 1px solid #e9e9e9;
       background-image: url("../../../imgs/e8/e8_3_03.png");
       background-repeat: no-repeat;
@@ -214,6 +218,8 @@ p, b, i, div, span, input, a {
           background-repeat: no-repeat;
           background-position: center center;
           background-size: 0.16rem 0.16rem; }
+        #note .note-listR .recode .recodeL .bk4, #note .note-listR .recode .recodeR .bk4 {
+          background-image: url("../../../imgs/e8/e7_11.png"); }
       #note .note-listR .recode .recodeR {
         width: 0.6rem;
         height: 0.22rem;
@@ -228,10 +234,11 @@ p, b, i, div, span, input, a {
           margin: auto;
           background-image: url("../../../imgs/e8/e7_4.png");
           background-size: 0.25rem 0.14rem; }
+        #note .note-listR .recode .recodeR .bk5 {
+          background-image: url("../../../imgs/e8/e7_14.png"); }
       #note .note-listR .recode .bj {
         float: right;
         margin-right: 1.04rem;
-        display: block;
         width: 0.71rem;
         height: 0.31rem;
         border-radius: 0.10rem;

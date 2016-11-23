@@ -124,7 +124,9 @@ $img-path2:'e5/';
     background-size: 7.50rem 13.34rem;
     filter: blur(3px);
     z-index: 100;
+    transition: all 0.35s;
     display: none;
+    transform: scale(0);
 }
 #mask2{
     position: absolute;
@@ -134,10 +136,9 @@ $img-path2:'e5/';
     right: 0; 
     background-color: rgba(0,0,0,0.2);
     z-index: 101;
+    transition: all 0.35s;
+    transform: scale(0);
     display: none;
-}
-div.show1{
-    display: block;
 }
 /*遮罩*/ 
 
@@ -153,6 +154,7 @@ div.show1{
     background-position: center 0;
     background-size: 4.78rem 2.97rem;
     z-index: 102;
+    transition: all 0.35s;
     .cancel,.set{
         position: absolute;
         bottom: 0.2rem;
@@ -181,6 +183,14 @@ div.show1{
 .success1{
     background-image: url($img-path+$img-path2+'e5_03.png');
     background-size: 4.78rem 2.95rem;
+    transition: all 0.35s;
+    transform: scale(0);
+    display: none;
+}
+.fails{
+    transition: all 0.35s;
+    transform: scale(0);
+    display: none;
 }
 /*评论状态-成功*/
 

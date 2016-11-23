@@ -9,7 +9,13 @@ $img-path8:'e8/';
 $img-pathF4:'f4/';
 $img-pathF10:'f10/';
 $color1:#ec2e56;
-
+/*图片路径*/
+$img-pathN1:url($img-path+$img-path8+'e8_07.png');
+$img-pathN2:url($img-path+$img-path8+'e7_21.png');
+$img-pathN3:url($img-path+$img-path8+'e7_4.png');
+$img-pathN1s:url($img-path+$img-path8+'e8_1.png');
+$img-pathN2s:url($img-path+$img-path8+'e7_11.png');
+$img-pathN3s:url($img-path+$img-path8+'e7_14.png');
 /*header*/
 #note-header{
     width: 100%;
@@ -48,8 +54,7 @@ $color1:#ec2e56;
     .note-box{
         @include box1(100%,auto);
         float: left;
-        margin-top: 1rem;
-//      overflow: hidden;     
+        margin-top: 1rem;    
     }
     .note-list{
         @include box1(100%,auto);
@@ -105,6 +110,7 @@ $color1:#ec2e56;
             margin-top: 0.11rem;
             padding: 0.12rem 1.12rem 0.13rem 0.52rem;   
             position: relative;
+            z-index: 9999;
             .p1,.p2{
                 height: 0.30rem;
                 font-size: 0.20rem;
@@ -113,19 +119,24 @@ $color1:#ec2e56;
                 line-height: 0.30rem;
                 overflow: hidden;
             }
+            
             .pen{
                 position: absolute;
                 left: 0.23rem;
                 top: 0.19rem;
                 @include cube(0.21rem);
-                background-image: url($img-path+$img-path8+'e8_07.png');
+                background-image: $img-pathN1!important;
                 background-repeat: no-repeat;
                 background-size: 0.21rem 0.21rem;
                 background-position: center center;
             }
+            .bk3{
+                background-image: $img-pathN1s;
+            }
+            
         }
         /*编辑效果*/
-        div.notes1{
+        .notes1{
             border: 1px solid #e9e9e9;
             background-image: url($img-path+$img-path8+'e8_3_03.png');
             background-repeat: no-repeat;
@@ -156,12 +167,15 @@ $color1:#ec2e56;
                     left: 0.05rem;
                     @include cube(0.16rem);
                     border-radius: 50%;
-                    background-image: url($img-path+$img-path8+'e7_21.png');
+                    background-image: $img-pathN2;
                     background-repeat: no-repeat;
                     background-position: center center;
 //                  box-shadow: 0 0 0.1rem rgba(42,126,255,0.13);
                     background-size: 0.16rem 0.16rem;
                 }
+                .bk4{
+                background-image: $img-pathN2s;
+            }
             }
             .recodeR{
                 @include box1(0.6rem,0.22rem);
@@ -171,15 +185,17 @@ $color1:#ec2e56;
                     @include box1(0.25rem,0.14rem);
                     left: 0;
                     @include  top-bottom;
-                    background-image: url($img-path+$img-path8+'e7_4.png');
+                    background-image: $img-pathN3;
                     background-size: 0.25rem 0.14rem;
                 }
+                .bk5{
+                background-image: $img-pathN3s;
+            }
                 
             }
             .bj{
                 float: right;
                 margin-right: 1.04rem;
-                display: block;
                 @include box1(0.71rem,0.31rem);
                 border-radius: 0.10rem;
                 border: 1px solid #fff;

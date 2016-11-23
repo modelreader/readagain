@@ -140,13 +140,17 @@ p, b, i, div, span, input, a {
     border-top: 1px solid #29dcbc;
     border-bottom: 2px solid #29dcbc;
     box-sizing: border-box;
-    -webkit-box-sizing: border-box; }
+    -webkit-box-sizing: border-box;
+    display: none;
+    z-index: 10; }
   #bookMarks .delete1 {
     width: 0.95rem;
     position: absolute;
+    z-index: 120;
     right: 0;
     top: 0rem;
-    bottom: 0; }
+    bottom: 0;
+    display: none; }
     #bookMarks .delete1 .delete-btn {
       width: 0.31rem;
       height: 0.31rem;
@@ -224,6 +228,8 @@ p, b, i, div, span, input, a {
           background-repeat: no-repeat;
           background-position: center center;
           background-size: 0.16rem 0.16rem; }
+        #bookMarks .bookmark-listR .recode .recodeL .bkl, #bookMarks .bookmark-listR .recode .recodeR .bkl {
+          background-image: url("../../../imgs/e7/e7_11.png"); }
       #bookMarks .bookmark-listR .recode .recodeR {
         float: right; }
         #bookMarks .bookmark-listR .recode .recodeR i {
@@ -232,6 +238,8 @@ p, b, i, div, span, input, a {
           left: 0.01rem;
           background-image: url("../../../imgs/e7/e7_4.png");
           background-size: 0.25rem 0.14rem; }
+        #bookMarks .bookmark-listR .recode .recodeR .bk2 {
+          background-image: url("../../../imgs/e7/e7_14.png"); }
   #bookMarks .bookmark-listBom {
     width: 100%;
     height: 0.17rem;

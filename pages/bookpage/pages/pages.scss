@@ -643,7 +643,7 @@ $width1:7.5rem;  //盒子宽度
        top: 0.31rem;
        @include left-right;
        background-color: #fff;
-       display: none;
+//     display: none;
     }
     .gongGe-li{
         @include box1(2.14rem,3.08rem); 

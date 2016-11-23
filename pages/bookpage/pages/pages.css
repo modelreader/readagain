@@ -665,8 +665,7 @@ p, b, i, div, span, input, a {
     right: 0;
     margin: auto;
     position: absolute;
-    background-color: #fff;
-    display: none; }
+    background-color: #fff; }
   #page .gongGe-li {
     width: 2.14rem;
     height: 3.08rem;
