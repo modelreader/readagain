@@ -665,7 +665,8 @@ p, b, i, div, span, input, a {
     right: 0;
     margin: auto;
     position: absolute;
-    background-color: #fff; }
+    background-color: #fff;
+    display: none; }
   #page .gongGe-li {
     width: 2.14rem;
     height: 3.08rem;
@@ -737,6 +738,6 @@ p, b, i, div, span, input, a {
       box-sizing: border-box;
       -webkit-box-sizing: border-box;
       box-shadow: 0 0 0.1rem rgba(42, 126, 255, 0.2); }
-    #page .waveWheel .wWBtn-first {
+    #page .waveWheel div.colors {
       border: none;
       background-color: #0090ff; }

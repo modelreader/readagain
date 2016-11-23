@@ -643,6 +643,7 @@ $width1:7.5rem;  //盒子宽度
        top: 0.31rem;
        @include left-right;
        background-color: #fff;
+       display: none;
     }
     .gongGe-li{
         @include box1(2.14rem,3.08rem); 
@@ -708,7 +709,11 @@ $width1:7.5rem;  //盒子宽度
             @include box-sizing;
             box-shadow: 0 0 0.1rem rgba(42,126,255,0.20);
         }
-        .wWBtn-first{
+//      .wWBtn-first{
+//          border: none;
+//          background-color: #0090ff;
+//      }
+        div.colors{
             border: none;
             background-color: #0090ff;
         }
