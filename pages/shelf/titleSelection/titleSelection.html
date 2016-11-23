@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-	<meta charset="UTF-8">
-	<title>titleSelection</title>
-	<meta name="viewport" content="width=device-width">
-	<link rel="stylesheet" href="titleSelection.css">
-</head>
-<body>
+
 <div id="titleSelection">
 	<div class="header">
 		<a href="#/searchWord">
@@ -17,10 +9,10 @@
 			<div class="icon">&#xe602;</div>
 			<input type="text" placeholder="服装设计学">
 		</div>
-		<div class="icon voice">&#xe606;</div>
+		<div class="icon voice" ng-click="hide()">&#xe606;</div>
 		<div class="hide">
 			<div class="hide-top">
-				<div class="center">
+				<div class="center" ng-chosetitle>
 					<div class="centerl">
 						<div class="click now">
 							<div class="clickl">
@@ -42,7 +34,7 @@
 			</div>
 			<div class="hide-bottom">
 				<div class="line"></div>
-				<ul>
+				<ul ng-choselist>
 					<li class="now"><div class="inside"><a href="#">全部</a></div></li>
 					<li><div class="inside"><a href="#">文艺</a></div></li>
 					<li><div class="inside"><a href="#">短篇精品</a></div></li>
@@ -195,6 +187,3 @@
 		</div>
 	</div>
 </div>
-	
-</body>
-</html>
