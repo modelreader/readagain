@@ -13,9 +13,10 @@ app.directive("hb", [
 			transclude: true,
 			link: function($scope, el) {
 				$(".xiaping").on("touchstart", false);
-				$(document).on("touchstart", function() {
-					$("#header-box").toggleClass("active");
-					$(".xiaping").toggleClass("active1");
+				$(".content").on("touchend", function(event) {
+						$("#header-box").toggleClass("active");
+					    $(".xiaping").toggleClass("active1");
+					
 				})
 				$(".classify").attr("id", "toubuliang");
 				$(".classify").eq(0).removeAttr("id", "toubuliang");
@@ -163,7 +164,7 @@ app.directive("hb", [
 				$("#dabiji .back-circle-l").on("touchend",function(){
 					$("#dabiji").hide()
 				})
-
+//				$("#fanhui").on("touchstart",false);
 			}
 		}
 	}
