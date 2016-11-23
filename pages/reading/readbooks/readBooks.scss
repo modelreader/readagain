@@ -7,7 +7,18 @@
     height:1rem;
     position:fixed;
     left:0;
-    top:0;
+    top:-1rem;
+    transition:all ease .8s;
+}
+.active{
+    transform:translate3d(0,1rem,0);
+}
+.active1{
+    transform:translate3d(0,-2.25rem,0);
+}
+#toubuliang{
+    background:none;
+    
 }
 #readBooks{
     width:100%;
@@ -58,7 +69,7 @@
     }
     .content{
         width:100%;
-        height:11.32rem;
+        height:11.66rem;
         padding-left:0.3rem;
         padding-right:0.6rem;
         p{
@@ -71,7 +82,7 @@
     }   
     .dibu{
         width:100%;
-        height:0.55rem;
+        height:0.58rem;
         .jindu{
             width:1.86rem;
             height:100%;
@@ -146,11 +157,12 @@
     position:fixed;
     width:100%;
     height:2.25rem;
-    bottom:0;
+    bottom:-2.25rem;
     left:0;
     background:#151c2b;
     padding-left:0.24rem;
     padding-right:0.24rem;
+    transition:all ease .8s;
     .tiaojie{
         width:100%;
         height:1.12rem;
@@ -179,6 +191,16 @@
                 border-radius: 50%;
                 background:url($img-path+"f1/f1_19.png");
                 background-size:cover;
+                z-index:1;
+            }
+            .tiaozi{
+                width:100%;
+                height:100%;
+                position:absolute;
+                left:0;
+                top:0;
+                background:-webkit-linear-gradient(left,#1db34b,palegreen);
+                z-index: 0;
             }
         }
     }
@@ -247,6 +269,7 @@
        bottom:0;
        padding-left:0.42rem; 
        display: none;
+       z-index: 5;
        .zihao,.hangju{
            width:100%;
            height:0.68rem;
@@ -274,9 +297,18 @@
                    background:url($img-path+"f6/f1_19.png");
                    background-size:cover;
                    position:absolute;
-                   left:0.2rem;
+                   left:-0.1rem;
                    @include top-bottom;
                    
+               }
+               .dianzi{
+                    width:0;
+                    height:100%;
+                    position:absolute;
+                    left:0;
+                    top:0;
+                    background:-webkit-linear-gradient(left,#1db34b,palegreen);
+                    z-index: 5; 
                }
            }
            .zihaoR{
@@ -357,6 +389,8 @@
         position:fixed;
         left:0;
         bottom:0;
+        display:none;
+        z-index: 7;
         .liang1{
             width:100%;
             height:0.37rem;
@@ -384,10 +418,22 @@
                     height:0.2rem;
                     background:url($img-path+"f1/f1_19.png");
                     background-size:cover;
-                    left:0.2rem;
+                    left:-0.1rem;
                     border-radius: 0.1rem;
+                    z-index:5;
                 }
+                .tiaozi{
+                width:0;
+                height:100%;
+                position:absolute;
+                left:0;
+                top:0;
+                background:-webkit-linear-gradient(left,#1db34b,palegreen);
+                z-index: 2;
+//              background:palegreen
             }
+            }
+            
             .liang{
                 height:100%;
                 text-align: left;
@@ -466,15 +512,25 @@ $bgcolorlist: $red $orange $yellow $green $bluegreen $blue $purple $black;
 
 .mulu{
     width:100%;
-    height:11.97rem;
+    height:13.34rem;
     background:#fff;
     position:absolute;
     left:0;
     top:0;
     display:none;
-    ul{
+    .mulu-box{
         width:100%;
         height:100%;
+        position:relative;   
+    }
+    ul{
+        width:100%;
+        height:11.97rem;
+        position:absolute;
+        left:0;
+        top:1rem;
+//      display:none;
+        
         li{
             width:100%;
             height:0.88rem;
@@ -501,17 +557,31 @@ $bgcolorlist: $red $orange $yellow $green $bluegreen $blue $purple $black;
             }
         }
     }
+    .xuanxiang{
+        width:100%;
+        height:auto;
+        position:absolute;
+        left:0;
+        top:0;
+        
+    }
 }
-.biji{
+#dabiji{
     width:100%;
-    height:11.96rem;
+    height:auto;
     background:#fff;
     position:absolute;
-    padding-left:0.25rem;
-    padding-right:0.25rem;
     left:0;
     top:0;
     display:none;
+}
+.biji{
+    width:100%;
+    height:12.34rem;
+    background:#fff;
+    padding-left:0.25rem;
+    padding-right:0.25rem;
+//  display:none;
     .date{
         width:100%;
         height:0.56rem;
@@ -587,4 +657,462 @@ $bgcolorlist: $red $orange $yellow $green $bluegreen $blue $purple $black;
         }
     }
 }
+//书签管理
+$width1:7.5rem;  //盒子宽度
+@mixin box-sizing{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+$img-path7:'e7/';
+$margin-bottom1: 0.12rem; //我的书签标题下边距
+$height1: 1.14rem; //我的书签列表高度 
 
+/*列表右边加效果*/
+$bI1:url($img-path+$img-path7+'e7_11.png');
+$bI2:url($img-path+$img-path7+'e7_14.png');
+$bIX1:url($img-path+$img-path7+'e7_21.png');
+$bIX2:url($img-path+$img-path7+'e7_4.png');
+$right1:0;
+$leftX:0.54rem;
+#shuqgl{
+    width:100%;
+    height:auto;
+    position:absolute;
+    left:0;
+    top:1rem;
+    display:none;
+      .note-count{
+        @include box1(100%,0.48rem);
+        background-color: #e5e5e5;
+        a{
+            display: block;
+            @include box1(100%,100%);
+            color: #a8a8a8;
+            font-size: 0.20rem;
+            line-height: 0.48rem;
+            text-align: center;
+        }
+    }
+     .bookmark-list{
+        @include box1(100%,$height1);
+        background-color: #fff;
+        margin-bottom: 0.10rem;
+        position: relative;
+//      display: none;
+    }
+    
+    /*选中效果*/
+    .selected{
+        @include box1(100%,$height1);
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url($img-path+$img-path7+'f3_03.png');
+        background-repeat: no-repeat;
+        background-size: 7.49rem 1.20rem;
+        background-position: 0rem 0rem;
+        @include box-sizing;
+        border-left:1px solid #29dcbc;
+        border-right:1px solid #29dcbc;
+        border-top:1px solid #29dcbc;
+        border-bottom:2px solid #29dcbc;
+        @include box-sizing;
+//      display: none;
+    }
+    .delete1{
+        width: 0.95rem;
+        position: absolute;
+        right: 0;
+        top: 0rem;
+        bottom: 0;
+        .delete-btn{
+            @include cube(0.31rem);
+            @include center;
+            background-image: url($img-path+$img-path7+'e7_07.png');
+            background-repeat: no-repeat;
+            background-size: 0.31rem 0.31rem;
+            background-position: center center; 
+        }
+    }
+    /*选中效果*/
+    .bookmark-listL{
+        @include box1(0.98rem,0.97rem);
+        float: left;
+        .img1{
+            display: block;
+            @include box1(100%,100%);
+            background-image: url($img-path+'e3/c4_54.png');
+            background-repeat: no-repeat;
+            background-size: 0.68rem 0.63rem;
+            background-position: 0.06rem 0.09rem;
+        }
+    }
+    .bookmark-listR{
+        position: absolute;
+        z-index: 101;
+        top: 0;
+        right: 0;
+        @include box1(6.52rem,0.97rem);
+        .titleB{
+            @include box1(100%,0.35rem);
+            color: #151c2b;
+            font-size: 0.24rem;
+            line-height: 0.35rem;
+            text-align: left;
+        }
+        .abstract2{
+            @include box1(100%,0.29rem);
+            color: #505050;
+            font-size: 0.18rem;
+            line-height: 0.29rem;
+            text-align: left;
+            letter-spacing: -0.01rem;
+            margin-bottom: 0.07rem;
+        }
+        .recode{
+            @include box1(100%,0.33rem);
+            padding-right: 0.46rem;
+            .recodeL,.recodeR{
+                display: block;
+                padding-left: 0.33rem;
+                float: left;
+                text-align: right;
+                font-family: tahoma;
+                font-weight: normal;
+                color: #7f7f7f;
+                font-size: 0.16rem;
+                line-height: 0.26rem;
+                position: relative;
+                i{
+                    display: block;
+                    position: absolute;
+                    @include  top-bottom;
+                    left: 0.08rem;
+                    @include cube(0.16rem);
+//                  border-radius: 50%;
+                    background-image: $bIX1;
+                    background-repeat: no-repeat;
+                    background-position: center center;
+//                  box-shadow: 0 0 0.1rem rgba(42,126,255,0.13);
+                    background-size: 0.16rem 0.16rem;
+                }
+                
+            }
+            .recodeR{
+                float: right;
+                i{
+                    @include box1(0.25rem,0.14rem);
+                    left: 0.01rem;
+                    background-image: $bIX2;
+                    background-size: 0.25rem 0.14rem;
+                }
+                
+            }
+        }
+    }
+    .bookmark-listBom{
+        @include box1(100%,0.17rem);
+        overflow: hidden;
+        line-height: 0.04rem;
+        text-align: center;
+        font-size: 0.12rem;
+        color: #999;
+    }
+    /*书签列表*/
+   
+    /*添加书签*/
+    .bookmark-add{
+        @include box1(100%,1.32rem);
+        background-color: #fff;
+    }
+    .add-box1{
+        @include box1(6.89rem,0.85rem);
+        margin: 0.24rem 0.24rem 0.36rem 0.23rem;
+        box-shadow: 0 0 0.1rem rgba(42,126,255,0.13);
+        position: relative;
+        overflow: hidden;
+        border-radius: 0.4rem;
+        text-align: center;
+        line-height: 0.85rem;
+    }
+    .add-btn1{
+        display: inline-block;
+        font-size: 0.24rem;
+        color: #2d2d2d;
+        position: relative;
+        span{
+            @include cube(0.36rem);
+            display: block;
+            position: absolute;
+            left: -0.47rem;
+            @include top-bottom;
+            background-image: url($img-path+'e3/e3_03.png');
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 0.36rem 0.36rem;
+        }
+    }
+    
+}
+//笔记管理
+$width1:7.5rem;  //盒子宽度
+$height1: 1.75rem; //我的笔记列表高度 
+@mixin box-sizing{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+$img-path8:'e8/';
+$img-pathF4:'f4/';
+$img-pathF10:'f10/';
+$color1:#ec2e56;
+#bijgl{
+    width:100%;
+    height:auto;
+    position:absolute;
+    left:0;
+    top:1rem;
+    display:none;
+    #mask3{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url($img-path+$img-pathF10+'弹幕下.png');
+        background-repeat: no-repeat;
+        background-position: 0 0;
+        background-size: 7.52rem 13.41rem;
+        filter: blur(5px);
+        z-index: 100;
+        display: none;
+    }
+    #mask4{
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0; 
+        background-color: rgba(0,0,0,0.8);
+        z-index: 101;
+        background-image: url($img-path+$img-pathF10+'f10_03.png');
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: 1.95rem 2.28rem;
+        display: none;
+    }
+    #note{
+    width: $width1;
+    height:auto;
+    margin-left: auto;
+    margin-right: auto;
+    
+    /*笔记条数*/
+    .note-count{
+        @include box1(100%,0.48rem);
+        background-color: #e5e5e5;
+        display:block;
+        a{
+            display: block;
+            @include box1(100%,100%);
+            color: #a8a8a8;
+            font-size: 0.20rem;
+            line-height: 0.48rem;
+            text-align: center;
+        }
+    }
+    /*笔记条数*/
+   
+    /*列表*/
+    .note-box{
+        @include box1(100%,auto);
+        float: left;
+        margin-top:0;  
+    }
+    .note-list{
+        @include box1(100%,auto);
+        position: relative;
+        float: left;
+    }
+    .note-listL{
+        @include box1(1.20rem,1.90rem);
+        float: left;
+        a{
+            display: block;
+            @include box1(100%,100%);
+            background-image: url($img-path+$img-path8+'e8-12.png');
+            background-repeat: no-repeat;
+            background-size: 0.74rem 0.74rem;
+            background-position: 0.24rem 0.45rem;   
+        }
+    }
+    .note-listR{
+        @include box1(6.30rem,1.90rem);
+        float: left;
+        position: absolute;
+        right: 0;
+        z-index: 91;
+        .title{
+            height: 0.36rem;
+            padding-left: 0.05rem;
+            padding-right: 1.90rem;
+            color: #151c2b;
+            font-size: 0.24rem;
+            line-height: 0.40rem;
+        }
+        .abstract3{
+            height: 0.23rem;
+            padding-left: 0.05rem;
+            padding-right: 2.14rem;
+            line-height: 0.23rem;
+            color: #666666;
+            font-size: 0.16rem;
+            font-weight: 500;
+        }
+        .notes{
+            @include box1(5.30rem,0.85rem);
+            background-color: #9ae1ff;
+            border: 1px solid #e9e9e9;
+            border-radius: 0.05rem;
+            margin-left: 0.02rem;
+            margin-top: 0.11rem;
+            background-image: url($img-path+$img-path8+'e8_3_03.png');
+            background-repeat: no-repeat;
+            background-size: 5.30rem 0.85rem;
+            background-position: 0 0;
+            padding: 0.12rem 1.12rem 0.13rem 0.52rem;   
+            position: relative;
+            .p1,.p2{
+                height: 0.30rem;
+                font-size: 0.20rem;
+                color: $color1;
+                font-weight: normal;
+                line-height: 0.30rem;
+                overflow: hidden;
+            }
+            .pen{
+                position: absolute;
+                left: 0.23rem;
+                top: 0.19rem;
+                @include cube(0.21rem);
+                background-image: url($img-path+$img-path8+'e8_07.png');
+                background-repeat: no-repeat;
+                background-size: 0.21rem 0.21rem;
+                background-position: center center;
+            }
+        }
+        .notes1{
+            background: none;
+            border: none;
+        }
+        .recode{
+            float: left;
+            @include box1(100%,0.32rem);
+            .recodeL,.recodeR{
+                display: block;
+                float: left;
+                margin-top: 0.10rem;
+                @include box1(0.65rem,0.22rem);
+                text-align: right;
+                margin-right: 0.40rem;
+                line-height: 0.22rem;
+                color: #7f7f7f;
+                font-size: 0.16rem;
+                font-family: Tahoma ;
+                font-weight: normal;
+                position: relative;
+                padding-left: 0.32rem;
+                  i{
+                    display: block;
+                    @include  top-bottom;
+                    left: 0.05rem;
+                    @include cube(0.16rem);
+                    border-radius: 50%;
+                    background-image: url($img-path+$img-path8+'e7_21.png');
+                    background-repeat: no-repeat;
+                    background-position: center center;
+                    background-size: 0.16rem 0.16rem;
+                }
+            }
+            .recodeR{
+                @include box1(0.6rem,0.22rem);
+                padding-left: 0.33rem;
+                i{
+
+                    @include box1(0.25rem,0.14rem);
+                    left: 0;
+                    @include  top-bottom;
+                    background-image: url($img-path+$img-path8+'e7_4.png');
+                    background-size: 0.25rem 0.14rem;
+                }
+                
+            }
+            .bj{
+                float: right;
+                margin-right: 1.04rem;
+                display: block;
+                @include box1(0.71rem,0.31rem);
+                border-radius: 0.10rem;
+                border: 1px solid #fff;
+                background-image: url($img-path+$img-pathF4+'f4_03.png');
+                background-repeat: no-repeat;
+                background-position: 0.01rem 0.01rem;
+                background-size: 0.75rem 0.35rem;
+                
+            }
+        }
+    }
+
+    .dashed1{
+            @include box1(100%,0.16rem);
+            line-height: 0.14rem;
+            font-size: 0.14rem;
+            color: #a0a0a0;
+            font-weight: normal;
+            text-align: left;
+            overflow: hidden;
+            background-color: #fff; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+    /*列表*/
+       /*选中效果*/
+    .selected{
+        width: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background-image: url($img-path+$img-path8+'e8_11.png');
+        background-repeat: no-repeat;
+        background-size: 7.50rem 2rem;
+        background-position: 0rem 0rem;
+        @include box-sizing;
+        border-left:1px solid #29dcbc;
+        border-right:1px solid #29dcbc;
+        border-top:1px solid #29dcbc;
+        border-bottom:2px solid #29dcbc;
+        @include box-sizing;
+        z-index: 90;
+    }
+    .delete1{
+        width: 0.95rem;
+        position: absolute;
+        right: 0;
+        top: 0rem;
+        bottom: 0;
+        z-index: 92;
+        .delete-btn{
+            @include cube(0.31rem);
+            @include center;
+            background-image: url($img-path+$img-path8+'e7_07.png');
+            background-repeat: no-repeat;
+            background-size: 0.31rem 0.31rem;
+            background-position: center center; 
+        }
+    }
+    
+  }
+}

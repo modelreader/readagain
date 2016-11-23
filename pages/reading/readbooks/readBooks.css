@@ -77,7 +77,17 @@ p, b, i, div, span, input, a {
   height: 1rem;
   position: fixed;
   left: 0;
-  top: 0; }
+  top: -1rem;
+  transition: all ease .8s; }
+
+.active {
+  transform: translate3d(0, 1rem, 0); }
+
+.active1 {
+  transform: translate3d(0, -2.25rem, 0); }
+
+#toubuliang {
+  background: none; }
 
 #readBooks {
   width: 100%;
@@ -122,7 +132,7 @@ p, b, i, div, span, input, a {
       font-weight: bold; }
   #readBooks .content {
     width: 100%;
-    height: 11.32rem;
+    height: 11.66rem;
     padding-left: 0.3rem;
     padding-right: 0.6rem; }
     #readBooks .content p {
@@ -133,7 +143,7 @@ p, b, i, div, span, input, a {
       margin-bottom: 0.42rem; }
   #readBooks .dibu {
     width: 100%;
-    height: 0.55rem; }
+    height: 0.58rem; }
     #readBooks .dibu .jindu {
       width: 1.86rem;
       height: 100%;
@@ -200,11 +210,12 @@ p, b, i, div, span, input, a {
   position: fixed;
   width: 100%;
   height: 2.25rem;
-  bottom: 0;
+  bottom: -2.25rem;
   left: 0;
   background: #151c2b;
   padding-left: 0.24rem;
-  padding-right: 0.24rem; }
+  padding-right: 0.24rem;
+  transition: all ease .8s; }
   .xiaping .tiaojie {
     width: 100%;
     height: 1.12rem; }
@@ -234,7 +245,16 @@ p, b, i, div, span, input, a {
         height: 0.24rem;
         border-radius: 50%;
         background: url("../../../imgs/f1/f1_19.png");
-        background-size: cover; }
+        background-size: cover;
+        z-index: 1; }
+      .xiaping .tiaojie .tiao .tiaozi {
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+        background: -webkit-linear-gradient(left, #1db34b, palegreen);
+        z-index: 0; }
   .xiaping .tubiao {
     width: 100%;
     height: 0.58rem; }
@@ -287,7 +307,8 @@ p, b, i, div, span, input, a {
     left: 0;
     bottom: 0;
     padding-left: 0.42rem;
-    display: none; }
+    display: none;
+    z-index: 5; }
     .xiaping .zhuti .zihao, .xiaping .zhuti .hangju {
       width: 100%;
       height: 0.68rem;
@@ -314,11 +335,19 @@ p, b, i, div, span, input, a {
           background: url("../../../imgs/f6/f1_19.png");
           background-size: cover;
           position: absolute;
-          left: 0.2rem;
+          left: -0.1rem;
           position: absolute;
           top: 0;
           bottom: 0;
           margin: auto; }
+        .xiaping .zhuti .zihao .zihaoCR .dianzi, .xiaping .zhuti .hangju .zihaoCR .dianzi {
+          width: 0;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: -webkit-linear-gradient(left, #1db34b, palegreen);
+          z-index: 5; }
       .xiaping .zhuti .zihao .zihaoR, .xiaping .zhuti .hangju .zihaoR {
         height: 100%;
         float: right;
@@ -383,7 +412,9 @@ p, b, i, div, span, input, a {
     background: #151c2b;
     position: fixed;
     left: 0;
-    bottom: 0; }
+    bottom: 0;
+    display: none;
+    z-index: 7; }
     .xiaping .liangdu .liang1 {
       width: 100%;
       height: 0.37rem; }
@@ -413,8 +444,17 @@ p, b, i, div, span, input, a {
           height: 0.2rem;
           background: url("../../../imgs/f1/f1_19.png");
           background-size: cover;
-          left: 0.2rem;
-          border-radius: 0.1rem; }
+          left: -0.1rem;
+          border-radius: 0.1rem;
+          z-index: 5; }
+        .xiaping .liangdu .liang1 .tiao .tiaozi {
+          width: 0;
+          height: 100%;
+          position: absolute;
+          left: 0;
+          top: 0;
+          background: -webkit-linear-gradient(left, #1db34b, palegreen);
+          z-index: 2; }
       .xiaping .liangdu .liang1 .liang {
         height: 100%;
         text-align: left;
@@ -488,15 +528,22 @@ p, b, i, div, span, input, a {
 
 .mulu {
   width: 100%;
-  height: 11.97rem;
+  height: 13.34rem;
   background: #fff;
   position: absolute;
   left: 0;
   top: 0;
   display: none; }
+  .mulu .mulu-box {
+    width: 100%;
+    height: 100%;
+    position: relative; }
   .mulu ul {
     width: 100%;
-    height: 100%; }
+    height: 11.97rem;
+    position: absolute;
+    left: 0;
+    top: 1rem; }
     .mulu ul li {
       width: 100%;
       height: 0.88rem;
@@ -516,17 +563,28 @@ p, b, i, div, span, input, a {
         color: #357fe4; }
       .mulu ul li .state {
         float: right; }
+  .mulu .xuanxiang {
+    width: 100%;
+    height: auto;
+    position: absolute;
+    left: 0;
+    top: 0; }
 
-.biji {
+#dabiji {
   width: 100%;
-  height: 11.96rem;
+  height: auto;
   background: #fff;
   position: absolute;
-  padding-left: 0.25rem;
-  padding-right: 0.25rem;
   left: 0;
   top: 0;
   display: none; }
+
+.biji {
+  width: 100%;
+  height: 12.34rem;
+  background: #fff;
+  padding-left: 0.25rem;
+  padding-right: 0.25rem; }
   .biji .date {
     width: 100%;
     height: 0.56rem; }
@@ -590,3 +648,432 @@ p, b, i, div, span, input, a {
       background-size: cover;
       float: left;
       margin-left: 1.77rem; }
+
+/*列表右边加效果*/
+#shuqgl {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  display: none;
+  /*选中效果*/
+  /*选中效果*/
+  /*书签列表*/
+  /*添加书签*/ }
+  #shuqgl .note-count {
+    width: 100%;
+    height: 0.48rem;
+    background-color: #e5e5e5; }
+    #shuqgl .note-count a {
+      display: block;
+      width: 100%;
+      height: 100%;
+      color: #a8a8a8;
+      font-size: 0.20rem;
+      line-height: 0.48rem;
+      text-align: center; }
+  #shuqgl .bookmark-list {
+    width: 100%;
+    height: 1.14rem;
+    background-color: #fff;
+    margin-bottom: 0.10rem;
+    position: relative; }
+  #shuqgl .selected {
+    width: 100%;
+    height: 1.14rem;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../../../imgs/e7/f3_03.png");
+    background-repeat: no-repeat;
+    background-size: 7.49rem 1.20rem;
+    background-position: 0rem 0rem;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    border-left: 1px solid #29dcbc;
+    border-right: 1px solid #29dcbc;
+    border-top: 1px solid #29dcbc;
+    border-bottom: 2px solid #29dcbc;
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box; }
+  #shuqgl .delete1 {
+    width: 0.95rem;
+    position: absolute;
+    right: 0;
+    top: 0rem;
+    bottom: 0; }
+    #shuqgl .delete1 .delete-btn {
+      width: 0.31rem;
+      height: 0.31rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      margin: auto;
+      background-image: url("../../../imgs/e7/e7_07.png");
+      background-repeat: no-repeat;
+      background-size: 0.31rem 0.31rem;
+      background-position: center center; }
+  #shuqgl .bookmark-listL {
+    width: 0.98rem;
+    height: 0.97rem;
+    float: left; }
+    #shuqgl .bookmark-listL .img1 {
+      display: block;
+      width: 100%;
+      height: 100%;
+      background-image: url("../../../imgs/e3/c4_54.png");
+      background-repeat: no-repeat;
+      background-size: 0.68rem 0.63rem;
+      background-position: 0.06rem 0.09rem; }
+  #shuqgl .bookmark-listR {
+    position: absolute;
+    z-index: 101;
+    top: 0;
+    right: 0;
+    width: 6.52rem;
+    height: 0.97rem; }
+    #shuqgl .bookmark-listR .titleB {
+      width: 100%;
+      height: 0.35rem;
+      color: #151c2b;
+      font-size: 0.24rem;
+      line-height: 0.35rem;
+      text-align: left; }
+    #shuqgl .bookmark-listR .abstract2 {
+      width: 100%;
+      height: 0.29rem;
+      color: #505050;
+      font-size: 0.18rem;
+      line-height: 0.29rem;
+      text-align: left;
+      letter-spacing: -0.01rem;
+      margin-bottom: 0.07rem; }
+    #shuqgl .bookmark-listR .recode {
+      width: 100%;
+      height: 0.33rem;
+      padding-right: 0.46rem; }
+      #shuqgl .bookmark-listR .recode .recodeL, #shuqgl .bookmark-listR .recode .recodeR {
+        display: block;
+        padding-left: 0.33rem;
+        float: left;
+        text-align: right;
+        font-family: tahoma;
+        font-weight: normal;
+        color: #7f7f7f;
+        font-size: 0.16rem;
+        line-height: 0.26rem;
+        position: relative; }
+        #shuqgl .bookmark-listR .recode .recodeL i, #shuqgl .bookmark-listR .recode .recodeR i {
+          display: block;
+          position: absolute;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          margin: auto;
+          left: 0.08rem;
+          width: 0.16rem;
+          height: 0.16rem;
+          background-image: url("../../../imgs/e7/e7_21.png");
+          background-repeat: no-repeat;
+          background-position: center center;
+          background-size: 0.16rem 0.16rem; }
+      #shuqgl .bookmark-listR .recode .recodeR {
+        float: right; }
+        #shuqgl .bookmark-listR .recode .recodeR i {
+          width: 0.25rem;
+          height: 0.14rem;
+          left: 0.01rem;
+          background-image: url("../../../imgs/e7/e7_4.png");
+          background-size: 0.25rem 0.14rem; }
+  #shuqgl .bookmark-listBom {
+    width: 100%;
+    height: 0.17rem;
+    overflow: hidden;
+    line-height: 0.04rem;
+    text-align: center;
+    font-size: 0.12rem;
+    color: #999; }
+  #shuqgl .bookmark-add {
+    width: 100%;
+    height: 1.32rem;
+    background-color: #fff; }
+  #shuqgl .add-box1 {
+    width: 6.89rem;
+    height: 0.85rem;
+    margin: 0.24rem 0.24rem 0.36rem 0.23rem;
+    box-shadow: 0 0 0.1rem rgba(42, 126, 255, 0.13);
+    position: relative;
+    overflow: hidden;
+    border-radius: 0.4rem;
+    text-align: center;
+    line-height: 0.85rem; }
+  #shuqgl .add-btn1 {
+    display: inline-block;
+    font-size: 0.24rem;
+    color: #2d2d2d;
+    position: relative; }
+    #shuqgl .add-btn1 span {
+      width: 0.36rem;
+      height: 0.36rem;
+      display: block;
+      position: absolute;
+      left: -0.47rem;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      margin: auto;
+      background-image: url("../../../imgs/e3/e3_03.png");
+      background-repeat: no-repeat;
+      background-position: center center;
+      background-size: 0.36rem 0.36rem; }
+
+#bijgl {
+  width: 100%;
+  height: auto;
+  position: absolute;
+  left: 0;
+  top: 1rem;
+  display: none; }
+  #bijgl #mask3 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: url("../../../imgs/f10/弹幕下.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-size: 7.52rem 13.41rem;
+    filter: blur(5px);
+    z-index: 100;
+    display: none; }
+  #bijgl #mask4 {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    z-index: 101;
+    background-image: url("../../../imgs/f10/f10_03.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: 1.95rem 2.28rem;
+    display: none; }
+  #bijgl #note {
+    width: 7.5rem;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    /*笔记条数*/
+    /*笔记条数*/
+    /*列表*/
+    /*列表*/
+    /*选中效果*/ }
+    #bijgl #note .note-count {
+      width: 100%;
+      height: 0.48rem;
+      background-color: #e5e5e5;
+      display: block; }
+      #bijgl #note .note-count a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        color: #a8a8a8;
+        font-size: 0.20rem;
+        line-height: 0.48rem;
+        text-align: center; }
+    #bijgl #note .note-box {
+      width: 100%;
+      height: auto;
+      float: left;
+      margin-top: 0; }
+    #bijgl #note .note-list {
+      width: 100%;
+      height: auto;
+      position: relative;
+      float: left; }
+    #bijgl #note .note-listL {
+      width: 1.2rem;
+      height: 1.9rem;
+      float: left; }
+      #bijgl #note .note-listL a {
+        display: block;
+        width: 100%;
+        height: 100%;
+        background-image: url("../../../imgs/e8/e8-12.png");
+        background-repeat: no-repeat;
+        background-size: 0.74rem 0.74rem;
+        background-position: 0.24rem 0.45rem; }
+    #bijgl #note .note-listR {
+      width: 6.3rem;
+      height: 1.9rem;
+      float: left;
+      position: absolute;
+      right: 0;
+      z-index: 91; }
+      #bijgl #note .note-listR .title {
+        height: 0.36rem;
+        padding-left: 0.05rem;
+        padding-right: 1.90rem;
+        color: #151c2b;
+        font-size: 0.24rem;
+        line-height: 0.40rem; }
+      #bijgl #note .note-listR .abstract3 {
+        height: 0.23rem;
+        padding-left: 0.05rem;
+        padding-right: 2.14rem;
+        line-height: 0.23rem;
+        color: #666666;
+        font-size: 0.16rem;
+        font-weight: 500; }
+      #bijgl #note .note-listR .notes {
+        width: 5.3rem;
+        height: 0.85rem;
+        background-color: #9ae1ff;
+        border: 1px solid #e9e9e9;
+        border-radius: 0.05rem;
+        margin-left: 0.02rem;
+        margin-top: 0.11rem;
+        background-image: url("../../../imgs/e8/e8_3_03.png");
+        background-repeat: no-repeat;
+        background-size: 5.30rem 0.85rem;
+        background-position: 0 0;
+        padding: 0.12rem 1.12rem 0.13rem 0.52rem;
+        position: relative; }
+        #bijgl #note .note-listR .notes .p1, #bijgl #note .note-listR .notes .p2 {
+          height: 0.30rem;
+          font-size: 0.20rem;
+          color: #ec2e56;
+          font-weight: normal;
+          line-height: 0.30rem;
+          overflow: hidden; }
+        #bijgl #note .note-listR .notes .pen {
+          position: absolute;
+          left: 0.23rem;
+          top: 0.19rem;
+          width: 0.21rem;
+          height: 0.21rem;
+          background-image: url("../../../imgs/e8/e8_07.png");
+          background-repeat: no-repeat;
+          background-size: 0.21rem 0.21rem;
+          background-position: center center; }
+      #bijgl #note .note-listR .notes1 {
+        background: none;
+        border: none; }
+      #bijgl #note .note-listR .recode {
+        float: left;
+        width: 100%;
+        height: 0.32rem; }
+        #bijgl #note .note-listR .recode .recodeL, #bijgl #note .note-listR .recode .recodeR {
+          display: block;
+          float: left;
+          margin-top: 0.10rem;
+          width: 0.65rem;
+          height: 0.22rem;
+          text-align: right;
+          margin-right: 0.40rem;
+          line-height: 0.22rem;
+          color: #7f7f7f;
+          font-size: 0.16rem;
+          font-family: Tahoma;
+          font-weight: normal;
+          position: relative;
+          padding-left: 0.32rem; }
+          #bijgl #note .note-listR .recode .recodeL i, #bijgl #note .note-listR .recode .recodeR i {
+            display: block;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            left: 0.05rem;
+            width: 0.16rem;
+            height: 0.16rem;
+            border-radius: 50%;
+            background-image: url("../../../imgs/e8/e7_21.png");
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: 0.16rem 0.16rem; }
+        #bijgl #note .note-listR .recode .recodeR {
+          width: 0.6rem;
+          height: 0.22rem;
+          padding-left: 0.33rem; }
+          #bijgl #note .note-listR .recode .recodeR i {
+            width: 0.25rem;
+            height: 0.14rem;
+            left: 0;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+            background-image: url("../../../imgs/e8/e7_4.png");
+            background-size: 0.25rem 0.14rem; }
+        #bijgl #note .note-listR .recode .bj {
+          float: right;
+          margin-right: 1.04rem;
+          display: block;
+          width: 0.71rem;
+          height: 0.31rem;
+          border-radius: 0.10rem;
+          border: 1px solid #fff;
+          background-image: url("../../../imgs/f4/f4_03.png");
+          background-repeat: no-repeat;
+          background-position: 0.01rem 0.01rem;
+          background-size: 0.75rem 0.35rem; }
+    #bijgl #note .dashed1 {
+      width: 100%;
+      height: 0.16rem;
+      line-height: 0.14rem;
+      font-size: 0.14rem;
+      color: #a0a0a0;
+      font-weight: normal;
+      text-align: left;
+      overflow: hidden;
+      background-color: #fff;
+      margin-left: auto;
+      margin-right: auto; }
+    #bijgl #note .selected {
+      width: 100%;
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: url("../../../imgs/e8/e8_11.png");
+      background-repeat: no-repeat;
+      background-size: 7.50rem 2rem;
+      background-position: 0rem 0rem;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      border-left: 1px solid #29dcbc;
+      border-right: 1px solid #29dcbc;
+      border-top: 1px solid #29dcbc;
+      border-bottom: 2px solid #29dcbc;
+      box-sizing: border-box;
+      -webkit-box-sizing: border-box;
+      z-index: 90; }
+    #bijgl #note .delete1 {
+      width: 0.95rem;
+      position: absolute;
+      right: 0;
+      top: 0rem;
+      bottom: 0;
+      z-index: 92; }
+      #bijgl #note .delete1 .delete-btn {
+        width: 0.31rem;
+        height: 0.31rem;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        background-image: url("../../../imgs/e8/e7_07.png");
+        background-repeat: no-repeat;
+        background-size: 0.31rem 0.31rem;
+        background-position: center center; }

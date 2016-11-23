@@ -1,11 +1,13 @@
-
-	<div id="header-box">
+<div hb>
 		<div class="reading-header">
-				<a href="#/bPages" class="back-circle-l">&#xe603;</a>
+				<div class="back-circle-l">&#xe603;</div>
 				<div class="back-circle-r">&#xe62c;</div>
 				<div class="read-add"></div>
 	    </div>
-    </div>
+	</div>
+	<!--<div id="header-box">-->
+		
+   <!-- </div>-->
 	<div id="readBooks">
 		<div class="bookname">
 			<div class="xian1"></div>
@@ -44,6 +46,7 @@
 			<div class="prev">上一章</div>
 			<div class="tiao">
 				<div class="dian"></div>
+				<div class="tiaozi"></div>
 			</div>
 			<div class="prev">下一章</div>
 		</div>
@@ -64,6 +67,7 @@
 				<div class="zihaoCL"></div>
 				<div class="zihaoCR">
 					<div class="dian"></div>
+					<div class="dianzi"></div>
 				</div>
 				<div class="zihaoR">20</div>
 			</div>
@@ -72,6 +76,7 @@
 				<div class="zihaoCL"></div>
 				<div class="zihaoCR">
 					<div class="dian"></div>
+					<div class="dianzi"></div>
 				</div>
 				<div class="zihaoR">06</div>
 			</div>
@@ -106,6 +111,7 @@
 				<div>暗</div>
 				<div class="tiao">
 					<div class="dian"></div>
+					<div class="tiaozi"></div>
 				</div>
 				<div class="liang">亮</div>
 				<div class="tu"></div>
@@ -122,8 +128,28 @@
 			</div>
 		</div>
 	</div>
+
 	<div class="mulu">
-		<ul>
+	   <div class="mulu-box">
+			<div class="reading-header">
+			   <div class="back-circle-l">&#xe603;</div>
+			   <div class="reading-list">
+				<div class="classify">
+					<h3>目录</h3>
+					<p>CATALOG</p>
+				</div>
+				<div class="classify">
+					<h3>书签</h3>
+					<p>BOOKMARK</p>
+				</div>
+				<div class="classify">
+					<h3>笔记</h3>
+					<p>NOTE</p>
+				</div>
+			   </div>
+	        </div>
+		<!--选项卡-->
+		<ul class="chuxian">
 			<li>
 				<div class="zhengwen">正文</div>
 				<div class="zhangshu">第一章</div>
@@ -203,7 +229,227 @@
 				<div class="state">已下载</div>
 			</li>
 		</ul>
+		<!--选项卡2-->
+		<div id="shuqgl" class="chuxian">
+			<div class="note-count">
+			   <a href="">目前您有3条读书笔记</a>
+		    </div>
+		    <div class="bookmark-box">
+			<div class="bookmark-list">
+				<div class="bookmark-listL">
+					<a href="" class="img1"></a>
+				</div>
+				<div class="bookmark-listR">
+					<h3 class="titleB">第一章  口吐莲花，会说话的聪明女人惹</h3>
+					<p class="abstract2">例如，当你见到一位相貌平平的先生，却偏要对他说我是…</p>
+					<div class="recode">
+						<span class="recodeL">
+							<i></i>
+							17:59
+						</span>
+						<span class="recodeR">
+							<i></i>
+							10%
+						</span>
+					</div>
+				</div>
+				<!--<div class="bookmark-listBom">..............................................................................................................................</div>-->
+			</div>
+			<div class="bookmark-list">
+				<!--选中效果-->
+				<div class="selected"></div>
+				<div class="delete1">
+					<span class="delete-btn"></span>
+				</div>
+				<!--选中效果-->
+				<div class="bookmark-listL">
+					<a href="" class="img1"></a>
+				</div>
+				<div class="bookmark-listR">
+					<h3 class="titleB">第一章  口吐莲花，会说话的聪明女人惹</h3>
+					<p class="abstract2">例如，当你见到一位相貌平平的先生，却偏要对他说我是…</p>
+					<div class="recode">
+						<span class="recodeL">
+							<i></i>
+							17:59
+						</span>
+						<span class="recodeR">
+							<i></i>
+							10%
+						</span>
+					</div>
+				</div>
+				<div class="bookmark-listBom">..............................................................................................................................</div>
+			</div>
+			<div class="bookmark-list">
+				<div class="bookmark-listL">
+					<a href="" class="img1"></a>
+				</div>
+				<div class="bookmark-listR">
+					<h3 class="titleB">第一章  口吐莲花，会说话的聪明女人惹</h3>
+					<p class="abstract2">例如，当你见到一位相貌平平的先生，却偏要对他说我是…</p>
+					<div class="recode">
+						<span class="recodeL">
+							<i></i>
+							17:59
+						</span>
+						<span class="recodeR">
+							<i></i>
+							10%
+						</span>
+					</div>
+				</div>
+				<div class="bookmark-listBom">..............................................................................................................................</div>
+			</div>
+			
+			<!--添加书签-->
+			<div class="bookmark-add" style="display: none;">
+				<div class="add-box1">
+					<a href="" class="add-btn1">
+						<span></span>
+						添加书签
+					</a>
+				</div>
+			</div>
+			<!--添加标签-->
+		</div>
+		</div>
+<!--		选项卡3-->
+      <div id="bijgl" class="chuxian">
+      	<div id="mask3"></div>
+	    <div id="mask4"></div>
+	    <div id="note">
+		<!--笔记条数-->
+		<div class="note-count">
+			<a href="">目前您有3条读书笔记</a>
+		</div>
+		<!--笔记条数-->
+		
+		<!--列表-->
+		<div class="note-box">
+			
+			<div class="note-list">
+				<!--选中效果-->
+				<!--<div class="selected"></div>
+				<div class="delete1">
+					<span class="delete-btn"></span>
+				</div>-->
+				<!--选中效果-->
+				<div class="note-listL">
+					<a href=""></a>
+				</div>
+				<div class="note-listR">
+					<h3 class="title">第一章  口吐莲花，会说话的聪明女人惹</h3>
+					<h4 class="abstract3">“不绝”之类的话，恐怕没有什么人…</h4>
+					<div class="notes">
+						<p class="p1">这里运用排比修辞手法形象生动的说明…</p>
+						<p class="p2">心情无比激动，看到睡不着！</p>
+						<span class="pen"></span>
+					</div>
+					<div class="recode">
+					<span class="recodeL">
+						<i></i>
+						17:59
+					</span>
+					<span class="recodeR">
+						<i></i>
+						10%
+					</span>
+					<span class="bj"></span>
+				</div>
+				</div>
+				
+				<!--<p class="dashed1">...................................................................................................................................</p>-->
+			</div>
+			
+			<div class="note-list">
+				<!--选中效果-->
+				<div class="selected"></div>
+				<div class="delete1">
+					<span class="delete-btn"></span>
+				</div>
+				<!--选中效果-->
+				<div class="note-listL">
+					<a href=""></a>
+				</div>
+				<div class="note-listR">
+					<h3 class="title">第一章  口吐莲花，会说话的聪明女人惹</h3>
+					<h4 class="abstract3">“不绝”之类的话，恐怕没有什么人…</h4>
+					<div class="notes">
+						<p class="p1">这里运用排比修辞手法形象生动的说明…</p>
+						<p class="p2">心情无比激动，看到睡不着！</p>
+						<span class="pen"></span>
+					</div>
+					<div class="recode">
+						<span class="recodeL">
+							<i></i>
+							17:59
+						</span>
+						<span class="recodeR">
+							<i></i>
+							10%
+						</span>
+					</div>
+				</div>
+				
+				<p class="dashed1">...................................................................................................................................</p>
+			</div>
+			
+						<div class="note-list">
+				<!--选中效果-->
+				<!--<div class="selected"></div>
+				<div class="delete1">
+					<span class="delete-btn"></span>
+				</div>-->
+				<!--选中效果-->
+				<div class="note-listL">
+					<a href=""></a>
+				</div>
+				<div class="note-listR">
+					<h3 class="title">第一章  口吐莲花，会说话的聪明女人惹</h3>
+					<h4 class="abstract3">“不绝”之类的话，恐怕没有什么人…</h4>
+					<div class="notes notes1">
+						<p class="p1">这里运用排比修辞手法形象生动的说明…</p>
+						<p class="p2">心情无比激动，看到睡不着！</p>
+						<span class="pen"></span>
+					</div>
+					<div class="recode">
+						<span class="recodeL">
+							<i></i>
+							17:59
+						</span>
+						<span class="recodeR">
+							<i></i>
+							10%
+						</span>
+					</div>
+				</div>
+				
+				<p class="dashed1">...................................................................................................................................</p>
+			</div>
+		</div>
+		<!--列表-->
 	</div>
+	
+	<!--footer-->
+	<div class="bookpage-footer">
+		<div class="bookpage-footer-m">
+			<div class="bookpage-footer-btn">
+				发布评论
+			</div>
+		</div>
+	</div>
+      </div>
+	</div>
+	</div>
+<div id="dabiji">
+	<div class="reading-header">
+		<div class="back-circle-l">&#xe603;</div>
+		<div class="reading-header-title">
+			<h3>我的笔记</h3>
+			<p>MY NOTES</p>
+		</div>
+    </div>
 	<div class="biji">
 		<div class="date">
 			<div class="logo"></div>
@@ -220,3 +466,4 @@
 			<div class="anniu2"></div>
 		</div>
 	</div>
+</div>
