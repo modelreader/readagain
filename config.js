@@ -5,11 +5,11 @@ app.config(['$routeProvider',function($routeProvider){
 	}).when('/register',{
 		templateUrl:'pages/login/register/register.html',
 		controller:'registerCtrl'
-	}).when('/retriveP1',{
-		templateUrl:'pages/login/retriveP1/retrievePassword1.html',
+	}).when('/retrieveP1',{
+		templateUrl:'pages/login/retrieveP1/retrievePassword1.html',
 		controller:'retriveP1Ctrl'
-	}).when('/retriveP2',{
-		templateUrl:'pages/login/retriveP2/setPassword.html',
+	}).when('/retrieveP2',{
+		templateUrl:'pages/login/retrieveP2/setPassword.html',
 		controller:'retriveP2Ctrl'
 	}).when('/mbkshelf',{
 		templateUrl:'pages/shelf/my-bookshelf/my-bookshelf.html',
