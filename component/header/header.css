@@ -318,7 +318,8 @@ p, b, i, div, span, input, a {
       text-align: center;
       display: block;
       width: 100%; }
-  .BookCity-footer .active {
+  .BookCity-footer .xuan {
+  	width:33.333%;
     background-image: url("../../imgs/c3/c1_xz.png");
     border-left: 1px solid #717171;
     border-right: 1px solid #717171; }

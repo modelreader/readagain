@@ -8,8 +8,8 @@ app.directive('ngN',[function(){
 		link:function($scope,el){
 				$(".xxk div").on("touchend",function(){
 						var index=$(this).index();
-						$(".xxk div").removeClass("active");
-						$(this).addClass('active');
+						$(".xxk div").removeClass("actives");
+						$(this).addClass('actives');
 						$("ul").css("display","none").eq(index).css("display","block");
 	            })
 		}
