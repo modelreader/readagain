@@ -14,9 +14,13 @@ app.directive("hb", [
 			link: function($scope, el) {
 				$(".xiaping").on("touchstart", false);
 				$(".content").on("touchend", function(event) {
+//					var $target = $(event.target);
+//					if($target.is("p")){
+//						$target.css("background","yellow");
+//					}
 						$("#header-box").toggleClass("active");
 					    $(".xiaping").toggleClass("active1");
-					
+
 				})
 				$(".classify").attr("id", "toubuliang");
 				$(".classify").eq(0).removeAttr("id", "toubuliang");
@@ -159,12 +163,37 @@ app.directive("hb", [
 				//我的笔记
 				$(".shang li:eq(1)").on("touchstart",function(){
 					$("#dabiji").show();
+					$(".biaoji").hide();
+					$(".ye").css("width",0).css("background","transparent")
+					
 				})
 				$(".shang li").on("touchend",false);
 				$("#dabiji .back-circle-l").on("touchend",function(){
 					$("#dabiji").hide()
 				})
-//				$("#fanhui").on("touchstart",false);
+                //笔记选中
+                var p=$(".content-zi");
+                var div=$(".ye");
+                p.on("touchstart", function(e) { //进度条拖进
+					ox = e.originalEvent.changedTouches[0].clientX
+					p.on("touchmove", function(e) {
+						var index=p.index($(this));
+						var left1 = e.originalEvent.changedTouches[0].clientX - p.offset().left -ox;
+						if (left1 >= p.width() || left1 <= 0) {
+							return;
+						}
+						
+						div.eq(index).css("width", left1).css("background","yellow")
+
+					})
+					  p.on("touchend",function(){
+	                	var index=p.index($(this));
+	                    $(".biaoji").eq(index).show();	
+                })
+					return false;
+				})
+              
+                
 			}
 		}
 	}
