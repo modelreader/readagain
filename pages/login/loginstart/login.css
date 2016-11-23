@@ -134,11 +134,14 @@ p, b, i, div, span, input, a {
 #login #logincon .words {
   text-align: left;
   float: left;
+  color: #0a196b;
+  font-size: 12px;
 }
 
 #login #logincon .name {
   float: right;
   text-align: right;
+  color: #0a196b;
 }
 
 #login #logincon input {
@@ -204,6 +207,11 @@ p, b, i, div, span, input, a {
   padding-left: 0.8rem;
 }
 
+#login #logincon .one .zhaohui a {
+  font-size: 12px;
+  color: #666;
+}
+
 #login #logincon .one .zhaohui i {
   position: absolute;
   left: 0.3rem;
@@ -222,6 +230,11 @@ p, b, i, div, span, input, a {
   padding-left: 1.4rem;
 }
 
+#login #logincon .one .zhuce a {
+  font-size: 12px;
+  color: #666;
+}
+
 #login #logincon .one .zhuce i {
   position: absolute;
   left: 0.9rem;
@@ -232,7 +245,7 @@ p, b, i, div, span, input, a {
   height: 0.25rem;
 }
 
-#login #logincon .denglu {
+#login #logincon a .denglu {
   width: 5.7rem;
   height: 0.7rem;
   margin-top: 1rem;
@@ -253,7 +266,7 @@ p, b, i, div, span, input, a {
   position: relative;
 }
 
-.login-header i {
+.login-header a i {
   position: absolute;
   left: 0.44rem;
   top: 0.8rem;

@@ -127,7 +127,7 @@ p, b, i, div, span, input, a {
   position: relative;
 }
 
-#register .header-logo .login-header i {
+#register .header-logo .login-header a i {
   position: absolute;
   left: 0.44rem;
   top: 0.8rem;
@@ -293,6 +293,11 @@ p, b, i, div, span, input, a {
   margin-top: 0.3rem;
 }
 
+#register #logincon .one .zhaohui a span {
+  color: #666;
+  font-size: 12px;
+}
+
 #register #logincon .one .zhaohui i {
   position: absolute;
   left: 0.3rem;
@@ -312,6 +317,11 @@ p, b, i, div, span, input, a {
   margin-top: 0.3rem;
 }
 
+#register #logincon .one .zhuce a span {
+  color: #666;
+  font-size: 12px;
+}
+
 #register #logincon .one .zhuce i {
   position: absolute;
   left: 0.9rem;
@@ -322,7 +332,7 @@ p, b, i, div, span, input, a {
   height: 0.25rem;
 }
 
-#register #logincon .denglu {
+#register #logincon a .denglu {
   width: 5.7rem;
   height: 0.7rem;
   text-align: center;

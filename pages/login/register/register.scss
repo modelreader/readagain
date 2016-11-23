@@ -31,7 +31,7 @@
             width: 100%;
             height: 1.4rem;   
             position: relative;
-            i{
+            a i{
                 position: absolute;
                 left: 0.44rem;
                 top: 0.8rem;
@@ -177,6 +177,7 @@
             width: 100%;
             height: auto;
             position: relative;
+            
             .zhaohui{
                 width: 50%;
                 height: auto;
@@ -184,6 +185,11 @@
                 position: relative;
                 padding-left: 0.8rem;
                 margin-top: 0.3rem;
+                a span{
+                    color: #666;
+                    font-size: 12px;
+                }
+                
                 i{
                     position: absolute;
                     left: 0.3rem;
@@ -202,6 +208,10 @@
                 position: relative;
                 padding-left: 1.4rem;
                 margin-top: 0.3rem;
+                a span{
+                    color: #666;
+                    font-size: 12px;
+                }
                 i{
                     position: absolute;
                     left: 0.9rem;
@@ -210,11 +220,12 @@
                     background-size: 0.25rem 0.25rem;
                     width: 0.25rem;
                     height: 0.25rem;
+                
                 }
             }
         }
         
-        .denglu {
+        a .denglu {
             width: 5.7rem;
             height: 0.7rem;
 

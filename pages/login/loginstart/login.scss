@@ -38,10 +38,13 @@
         .words{
             text-align: left;
             float: left;
+            color: #0a196b;
+            font-size: 12px;
         }
         .name{
             float: right;
             text-align: right;
+            color: #0a196b;
         }
         
         input{
@@ -101,6 +104,10 @@
                 float: left;
                 position: relative;
                 padding-left: 0.8rem;
+                a{
+                    font-size: 12px;
+                    color: #666;
+                }
                 i{
                     position: absolute;
                     left: 0.3rem;
@@ -118,6 +125,10 @@
                 float: right;
                 position: relative;
                 padding-left: 1.4rem;
+                a{
+                    font-size: 12px;
+                    color: #666;
+                }
                 i{
                     position: absolute;
                     left: 0.9rem;
