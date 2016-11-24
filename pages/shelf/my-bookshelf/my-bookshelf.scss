@@ -1,20 +1,4 @@
-@import "../../../css/dev/base.scss";
-@font-face {
-  font-family: 'iconfont';
-  src: url('../../../fonts/bookfont/iconfont.eot');
-  src: url('../../../fonts/bookfont/iconfont.eot?#iefix') format('embedded-opentype'),
-  url('../../../fonts/bookfont/iconfont.woff') format('woff'),
-  url('../../../fonts/bookfont/iconfont.ttf') format('truetype'),
-  url('../../../fonts/bookfont/iconfont.svg#iconfont') format('svg');
-}
-.icon{
-  font-family:"iconfont" !important;
-  font-size:16px;font-style:normal;
-  -webkit-font-smoothing: antialiased;
-  -webkit-text-stroke-width: 0.2px;
-  -moz-osx-font-smoothing: grayscale;
-}
-
+@import "../../../css/dev/base";
 html{
 	height:100%;
 	width:100%;
@@ -132,53 +116,7 @@ body{
 			bottom:.28rem;
 		}
 	}
-	.footer{
-		height:7.5%;
-		background:#151C2B;
-		ul{
-			width:100%;
-			height:100%;
-			li{
-				width:33.33333333%;
-				height:100%;
-				float:left;
-				position:relative;
-				.icon{
-					font-size:.44rem;
-					@include left-right;
-					top:.1rem;
-					text-align:center;
-
-				}
-				a{
-					display:block;
-					width:100%;
-					height:100%;
-					position:relative;
-					color:#67686a;
-					span{
-						@include left-right;
-						bottom:.1rem;
-						font-size:.24rem;
-						text-align:center;
-					}
-					.line{
-						@include top-bottom;
-						left:.01rem;
-						width:.01rem;
-						height:95%;
-						background:#717171;
-						z-index:10;
-					}
-				}
-			}
-			.now{
-				a{
-					color:#fff;
-				}
-			}
-		}
-	}
+	
 	.content{
 		width:100%;
 		height:82.35%;
@@ -378,6 +316,8 @@ body{
 							p{
 								width:5rem;
 								height:.7rem;
+								line-height: 0.35rem;
+								overflow: hidden;
 							}
 						}
 						.readed{
@@ -422,7 +362,7 @@ body{
 							bottom:-.06rem;
 							color:#fff;
 							font:.2rem/.45rem "微软雅黑";
-							span{
+							a{
 								@include incenter;
 								color:#fff;
 								font:.2rem/.45rem "微软雅黑";
@@ -457,4 +397,10 @@ body{
 			}
 		}
 	}
+}
+p.one{
+    font-size:0.44rem!important;
+}
+span.span{
+    font-size:0.24rem!important;    
 }
