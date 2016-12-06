@@ -161,18 +161,21 @@ app.directive("hb", [
 					$("#readBooks").css("background",arr[index]);					
 				})
 				//我的笔记
-				$(".shang li:eq(1)").on("touchstart",function(){
+				$(".shang").each(function(i,v){
+	              $(".shang:eq("+i+") li:eq(1)").on("touchstart",function(){
 					$("#dabiji").show();
-					$(".biaoji").hide();
+					$(".biaoji").eq(i).hide();
 					$(".ye").css("width",0).css("background","transparent")
 					
-				})
-				$(".shang li").on("touchend",false);
-				$("#dabiji .back-circle-l").on("touchend",function(){
+				  })
+	              $(".shang:eq("+i+") li").on("touchend",false);
+				  $("#dabiji .back-circle-l").on("touchend",function(){
 					$("#dabiji").hide()
 				})
+				})
+				
                 //笔记选中
-                var p=$(".content-zi");
+                var p=$(".content-zi p");
                 var div=$(".ye");
                 p.on("touchstart", function(e) { //进度条拖进
 					ox = e.originalEvent.changedTouches[0].clientX
@@ -187,8 +190,8 @@ app.directive("hb", [
 
 					})
 					  p.on("touchend",function(){
-	                	var index=p.index($(this));
-	                    $(".biaoji").eq(index).show();	
+	                	var index=p.index($(this));	
+	                    $(".biaoji").hide().eq(index).show();	
                 })
 					return false;
 				})

@@ -112,11 +112,11 @@ p, b, i, div, span, input, a {
       font-size: 0.14rem;
       color: #a1946e; }
     #readBooks .bookname .xian2 {
-      width: 5.40rem;
-      height: 0.01rem;
-      background: #635c48;
+      width: 5.00rem;
+      height: 0.02rem;
+      background: #a1946e;
       float: left;
-      margin-top: 0.2rem; }
+      margin-top: 0.25rem; }
   #readBooks .title {
     width: 100%;
     height: 0.8rem;
@@ -132,32 +132,34 @@ p, b, i, div, span, input, a {
       font-weight: bold; }
   #readBooks .content {
     width: 100%;
-    height: 11.66rem;
+  /*  height: 11.66rem;*/
     padding-left: 0.3rem;
-    padding-right: 0.6rem; }
+    padding-right:0.3rem;
+     }
     #readBooks .content .content-zi {
-      margin-bottom: 0.42rem;
+      margin-bottom: 0.22rem;
       width: 100%;
-      height: 0.4rem;
-      position: relative; }
+      z-index:1;
+      position: relative;
+      background:transparent; }
       #readBooks .content .content-zi .ye {
         position: absolute;
         left: 0;
         top: 0;
         width: 0;
-        height: 100%;
-        z-index: 1; }
+        height:0.5rem;
+        z-index:-1; }
       #readBooks .content .content-zi p {
         width: 100%;
         height: 100%;
         font-size: 0.24rem;
         color: #3a3730;
-        letter-spacing: 0.04rem;
-        position: absolute;
-        left: 0;
-        top: 0;
-        z-index: 2;
+        letter-spacing: 0.06rem;
+        line-height:0.4rem;
         text-align: left; }
+    #readBooks .content .content-zi p.a{
+    	text-indent:2em;
+    }      
   #readBooks .dibu {
     width: 100%;
     height: 0.58rem; }
@@ -230,6 +232,7 @@ p, b, i, div, span, input, a {
   height: 2.25rem;
   bottom: -2.25rem;
   left: 0;
+  z-index:5;
   background: #151c2b;
   padding-left: 0.24rem;
   padding-right: 0.24rem;
@@ -241,7 +244,6 @@ p, b, i, div, span, input, a {
       height: 100%;
       line-height: 1.12rem;
       text-align: left;
-      margin-left: 0.18rem;
       font-size: 0.24rem;
       color: #c6c6c6;
       float: left; }
