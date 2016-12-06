@@ -6,7 +6,7 @@ app.directive("ngXcase",function(){
 		restrict:"A",
 		transclude:true,
 		replace:true,
-		template:'<div class="BookCity-list"><div ng-transclude></div></div>',
+		template:'<div class="BookCity-list"><div ng-transclude class="booktitleM"></div></div>',
 		link:function($scope,el){
 			$('.dis').eq(0).css('display','block');
 			$('.BookCity-header').on('click','.classify',function(){
